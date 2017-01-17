@@ -1,0 +1,26 @@
+/*  #Theme Full image cards
+===========================================*/
+.slider {
+  height: auto; }
+
+.card-bcg {
+  background-color: rgba(55, 71, 79, 0.6) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin: 5px 10px;
+  padding: 8px; }
+  .card-bcg .title-card {
+    position: absolute;
+    top: 70%;
+    left: 20px;
+    text-align: left; }
+    .card-bcg .title-card h2.card-title {
+      color: white;
+      font-size: 20px !important; }
+    .card-bcg .title-card h3.card-subtitle {
+      color: rgba(255, 255, 255, 0.6) !important;
+      font-size: 16px; }
+  .card-bcg .item-image {
+    position: relative;
+    border-radius: 4px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }

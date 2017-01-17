@@ -1,0 +1,37 @@
+/*  # Theme Image Gallery Card
+================================================*/
+.card.half {
+  width: 50%;
+  display: block;
+  float: left;
+  background-color: transparent;
+  box-shadow: none;
+  margin: 0; }
+  .card.half .card-image {
+    height: 140px;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 5px; }
+    .card.half .card-image .gallery-title {
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding: 10px;
+      background-color: rgba(37, 37, 37, 0.5) !important;
+      bottom: 0;
+      min-height: 45px;
+      border-bottom: 1px solid transparent !important; }
+      .card.half .card-image .gallery-title i.icon {
+        color: white;
+        font-size: 20px;
+        right: 0; }
+      .card.half .card-image .gallery-title h2.item-title {
+        color: white;
+        font-size: 20px; }
+      .card.half .card-image .gallery-title p.item-subtitle {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 16px; }
+      .card.half .card-image .gallery-title.item {
+        padding-right: 40px; }

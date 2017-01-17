@@ -1,0 +1,19 @@
+/*  # Theme Simple 2
+===========================================*/
+.item-bcg {
+  background-color: #fefefe !important;
+  border-color: #f4f5f5 !important;
+  transition: all 0 ease-out;
+  border: 1px solid #f4f5f5; }
+  .item-bcg h2.item-title {
+    color: #9d9d9d;
+    font-size: 14px;
+    line-height: 21px; }
+  .item-bcg input[type="checkbox"].filled-in:checked + label:after {
+    border: 2px solid #692c90;
+    background-color: #692c90; }
+  .item-bcg input[type="checkbox"].filled-in:not(:checked) + label:after {
+    border: 2px solid #692c90 !important; }
+  .item-bcg input[type="checkbox"].filled-in:checked + label:before {
+    border-right: 2px solid white;
+    border-bottom: 2px solid white; }

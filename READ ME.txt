@@ -1,0 +1,34 @@
+Hi,
+
+First of all - thank you for buying our template! 
+
+Before you use template, please read documentation for better understanding how to use it.
+http://csform.com/documentation-for-ionic-ui-template-app/
+
+Also you can contact us at dev@csform.com if you need.
+
+Happy coding! :)
+
+
+UPDATES:
+
+
+Version 2.0 - 08. November 2016.
+- SASS structure added!
+- Totally redesigned.
+- 5 themes added: Yellow dark, Green light, Red dark, Blue light and Purple Light.
+- Live preview added.
+- A lot of minor bugs fixed.
+
+
+Version 0.1.2
+- Five Wizards added.
+- Ten Spinners/loaders added.
+- Google cards loading fixed.
+- Social networks login buttons added on login screens.
+- Minor bugs fixed.
+
+
+Version 0.1.4 
+- New layout added: Parallax Swiper.
+- Minor bugs fixed.

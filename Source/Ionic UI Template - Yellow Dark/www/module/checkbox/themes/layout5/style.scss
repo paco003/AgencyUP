@@ -1,0 +1,23 @@
+// # Main Sass
+@import "../../../../../scss/main-style.scss";
+/*  # Theme With 2 funcional icon
+===========================================*/
+.item-bcg {
+  @include item( 'item-bcg');
+
+  h2.item-title {
+    @include item( 'item-title');
+    line-height: 18px;
+  }
+
+  .button-flat {
+    @include button( 'button-flat');
+    padding-right: 0;
+  }
+
+  .icon-small {
+    @include icon( 'icon-small');
+  }
+
+  input[type="checkbox"] {
+    @include checkbox-item('input[type= "checkbox"]'); &+label{ margin-top: 10px; } } };

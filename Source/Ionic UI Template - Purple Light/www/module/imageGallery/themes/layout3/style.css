@@ -1,0 +1,35 @@
+/*  # Theme Category 2 (Music)
+================================================*/
+.card.half {
+  width: 50%;
+  display: block;
+  float: left;
+  background-color: transparent;
+  box-shadow: none;
+  margin: 0; }
+
+.card .card-image {
+  height: 140px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 5px; }
+  .card .card-image .gallery-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    background-color: rgba(37, 37, 37, 0.5);
+    min-height: 45px;
+    border-bottom: 1px solid transparent !important; }
+    .card .card-image .gallery-title h2.item-title {
+      color: white;
+      font-size: 14px; }
+    .card .card-image .gallery-title p.item-subtitle {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 14px; }
+    .card .card-image .gallery-title i.icon {
+      color: white;
+      font-size: 18px;
+      right: 0; }

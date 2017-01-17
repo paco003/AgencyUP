@@ -1,0 +1,33 @@
+/*  # Themes Simple
+================================================*/
+.item-bcg {
+  background-color: rgba(55, 71, 79, 0.6) !important;
+  border-color: rgba(55, 71, 79, 0);
+  margin-bottom: 2px;
+  transition: all 0s ease-out; }
+  .item-bcg h2.item-title {
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    line-height: 33px; }
+  .item-bcg.item {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 5px 15px 5px 25px;
+    margin: 10px 5px;
+    border-color: transparent;
+    border-radius: 4px; }
+  .item-bcg .icon-small {
+    color: #ef4437 !important;
+    font-size: 20px !important; }
+  .item-bcg .btn-flat {
+    padding: 0; }
+  .item-bcg input[type="checkbox"].filled-in:checked + label:after {
+    border: 2px solid #ef4437;
+    background-color: #ef4437; }
+  .item-bcg input[type="checkbox"].filled-in:not(:checked) + label:after {
+    border: 2px solid #ef4437 !important; }
+  .item-bcg input[type="checkbox"].filled-in:checked + label:before {
+    border-right: 2px solid #263238;
+    border-bottom: 2px solid #263238; }
+  .item-bcg input[type="checkbox"] + label {
+    margin-top: 8px; }

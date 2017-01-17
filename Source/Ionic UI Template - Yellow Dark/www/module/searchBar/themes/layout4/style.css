@@ -1,0 +1,81 @@
+/*  #Thema Field + header
+===========================================*/
+.container-hearder-image {
+  background-color: white;
+  background-blend-mode: luminosity;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 168px !important;
+  padding: 0; }
+  .container-hearder-image::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    background-color: #424242; }
+  .container-hearder-image h1.search-bar-title {
+    color: #fcd736;
+    font-size: 24px !important;
+    margin: 0 10px;
+    padding-top: 90px;
+    z-index: 9;
+    position: relative; }
+  .container-hearder-image .icon-small {
+    color: rgba(252, 215, 54, 0.6) !important;
+    font-size: 20px !important;
+    margin: 0 5px;
+    width: 40px;
+    text-align: center; }
+  .container-hearder-image .search-bar-bcg {
+    background-color: #424242; }
+  .container-hearder-image .item.item-input {
+    border-color: transparent !important;
+    border-radius: 4px;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px; }
+    .container-hearder-image .item.item-input input {
+      font-size: 14px;
+      color: #fcd736;
+      border-bottom: 1px solid #fcd736 !important;
+      padding-right: 0;
+      padding-left: 10px; }
+      .container-hearder-image .item.item-input input::-webkit-input-placeholder {
+        font-size: 14px;
+        color: #fcd736; }
+      .container-hearder-image .item.item-input input:focus:not([readonly]) {
+        color: #fcd736;
+        font-size: 14px;
+        box-shadow: none; }
+      .container-hearder-image .item.item-input input[type="search"] {
+        border-bottom: none !important; }
+    .container-hearder-image .item.item-input i.icon:first-child {
+      border-right: 1px solid #fcd736; }
+
+.list-content {
+  top: 225px !important; }
+  .list-content .item-bcg {
+    background-color: #424242 !important;
+    border-color: #202020 !important; }
+  .list-content .icon-small {
+    color: rgba(252, 215, 54, 0.6) !important;
+    font-size: 20px !important; }
+  .list-content h2.item-title {
+    color: #fcd736;
+    font-size: 20px; }
+  .list-content h3.item-subtitle {
+    color: rgba(254, 254, 254, 0.6);
+    font-size: 12px; }
+
+/*  #Ios Style
+===========================================*/
+.platform-ios .list-content {
+  top: 233px !important; }

@@ -1,0 +1,17 @@
+// # Main Sass
+@import "../../../../../scss/main-style.scss";
+/*  # Theme Simple 2
+===========================================*/
+.item-bcg {
+    @include item( 'item-bcg');
+    border: $item-divider-small;
+
+  h2.item-title {
+      @include item( 'item-title');
+      line-height: 18px;
+  }
+
+  input[type="checkbox"] {
+    @include checkbox-item('input[type="checkbox"]');
+  }
+}

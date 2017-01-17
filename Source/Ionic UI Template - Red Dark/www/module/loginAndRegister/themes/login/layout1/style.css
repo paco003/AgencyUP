@@ -1,0 +1,75 @@
+/*  #Theme Login + logo
+================================================*/
+img {
+  margin: 0 auto;
+  display: block;
+  clear: both;
+  max-width: 100px; }
+
+.skip.button-flat {
+  font-weight: 300; }
+
+.button-flat {
+  margin: 10px;
+  color: white !important;
+  font-size: 16px;
+  font-weight: 400 !important; }
+
+.form-block {
+  margin: 0 25px;
+  overflow: hidden;
+  /* Style Login + logo Network
+  ===========================================*/ }
+  .form-block .form-input {
+    overflow: hidden; }
+  .form-block .button-default {
+    margin-left: 10px;
+    background-color: #ef4437 !important;
+    color: white !important;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 400 !important; }
+  .form-block .social {
+    margin: 40px auto 0;
+    overflow: hidden; }
+    .form-block .social p {
+      color: white;
+      font-size: 16px; }
+    .form-block .social .button-social {
+      font-size: 16px;
+      color: #fff;
+      border-radius: 4px;
+      padding: 7px 10px;
+      width: 49%;
+      text-align: center;
+      float: left;
+      display: block;
+      margin-right: 5px;
+      margin-bottom: 5px; }
+    .form-block .social > .button-social:nth-child(3) {
+      margin-right: 0; }
+    .form-block .social > .button-social:nth-child(5) {
+      margin-right: 0; }
+  .form-block .input-field {
+    margin-bottom: 25px; }
+    .form-block .input-field input {
+      font-size: 16px;
+      color: white;
+      border-bottom: 1px solid white !important; }
+      .form-block .input-field input:focus:not([readonly]) {
+        color: white;
+        box-shadow: none; }
+      .form-block .input-field input + label {
+        color: white;
+        font-size: 16px;
+        left: 0;
+        top: 11px; }
+        .form-block .input-field input + label.active {
+          color: rgba(255, 255, 255, 0.6) !important;
+          font-size: 10px; }
+    .form-block .input-field .icon-small {
+      color: #ef4437 !important;
+      font-size: 20px !important;
+      text-align: center;
+      left: 5px;
+      top: 15px; }

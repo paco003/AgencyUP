@@ -1,0 +1,55 @@
+/*  # Theme Register + logo
+======================================================*/
+.register-form {
+  padding-top: 30px;
+  margin: 0 25px; }
+
+img {
+  max-width: 45px;
+  margin: 0 15px; }
+
+.button-flat {
+  color: white !important;
+  font-size: 16px;
+  font-weight: 400 !important; }
+
+.form-input {
+  overflow: hidden; }
+
+.form-block {
+  background-color: rgba(38, 50, 56, 0.6) !important;
+  padding: 10px 25px;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px 0;
+  margin-bottom: 25px; }
+  .form-block h1.title {
+    font-size: 28px;
+    color: white;
+    text-align: right;
+    text-transform: uppercase;
+    margin: 0 10px; }
+
+.input-field {
+  margin-bottom: 25px;
+  width: 95%; }
+  .input-field input {
+    font-size: 16px;
+    color: white;
+    border-bottom: 1px solid white !important; }
+    .input-field input:focus:not([readonly]) {
+      color: white;
+      box-shadow: none; }
+    .input-field input + label {
+      color: white;
+      font-size: 16px;
+      left: 0;
+      top: 11px; }
+      .input-field input + label.active {
+        color: rgba(255, 255, 255, 0.6) !important;
+        font-size: 10px; }
+  .input-field .icon-small {
+    color: #ef4437 !important;
+    font-size: 20px !important;
+    left: 5px;
+    top: 15px; }

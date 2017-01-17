@@ -1,0 +1,73 @@
+/*  #Theme Styled cards 2
+===========================================*/
+.slider {
+  height: auto; }
+
+/*  #Content
+===========================================*/
+.card {
+  margin: 10px;
+  text-align: right;
+  background-color: transparent; }
+  .card .card-image {
+    position: relative;
+    background-color: white;
+    background-blend-mode: luminosity; }
+    .card .card-image::before {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      pointer-events: none;
+      mix-blend-mode: multiply;
+      opacity: 0.5;
+      background: #00bea4;
+      /* Old browsers */
+      background: -moz-linear-gradient(45deg, #00bea4 0%, #81c784 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(45deg, #00bea4 0%, #81c784 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(45deg, #00bea4 0%, #81c784 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bea4', endColorstr='#81c784',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */ }
+    .card .card-image:before {
+      z-index: 1; }
+    .card .card-image img {
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1); }
+    .card .card-image h2.card-title {
+      right: 0 !important;
+      left: auto !important;
+      color: white;
+      font-size: 24px !important;
+      font-weight: bold;
+      z-index: 9; }
+  .card h3.card-subtitle {
+    color: #bdbcbc !important;
+    font-size: 14px;
+    padding-bottom: 10px; }
+  .card.card-bcg {
+    background-color: rgba(244, 245, 245, 0.8) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
+  .card .card-body-text {
+    color: #bdbcbc !important;
+    font-size: 14px; }
+  .card .card-action {
+    border-top: none !important;
+    padding: 0 !important; }
+    .card .card-action .button-default {
+      background-color: #81c784 !important;
+      color: white !important;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 4px;
+      font-weight: normal;
+      margin-bottom: 10px;
+      padding: 5px 10px;
+      line-height: 25px; }
+    .card .card-action a:last-child {
+      margin-right: 5px; }

@@ -1,0 +1,45 @@
+/*  #Theme Medium header + medium item
+===========================================*/
+.item-divider {
+  padding: 10px; }
+  .item-divider.header-divider {
+    background-color: #853a96;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    z-index: 9; }
+  .item-divider h2.header-title {
+    color: white;
+    font-size: 22px;
+    padding-right: 45px; }
+  .item-divider .icon-medium {
+    color: rgba(105, 44, 144, 0.6);
+    font-size: 24px !important; }
+
+/*  #Content
+===========================================*/
+.item-bcg {
+  background-color: #fefefe !important;
+  border-color: #f4f5f5 !important;
+  transition: all 0 ease-out;
+  max-height: 80px; }
+  .item-bcg .icon-small {
+    color: #692c90 !important;
+    font-size: 18px !important;
+    z-index: 9;
+    position: relative; }
+  .item-bcg h2.item-title {
+    color: #9d9d9d;
+    font-size: 14px;
+    margin-bottom: 10px;
+    z-index: 9;
+    position: relative; }
+  .item-bcg p.item-subtitle {
+    color: rgba(157, 157, 157, 0.6);
+    font-size: 14px;
+    z-index: 9;
+    position: relative; }
+  .item-bcg .price.span-medium {
+    color: #692c90;
+    font-size: 22px;
+    z-index: 9;
+    position: relative; }

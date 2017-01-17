@@ -1,0 +1,86 @@
+/*  #Thema Parallax Product
+===========================================*/
+.container-hearder-image {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-blend-mode: luminosity;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 250px;
+  display: table;
+  position: relative;
+  z-index: 999; }
+  .container-hearder-image::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    background-color: #424242; }
+  .container-hearder-image .title {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; }
+    .container-hearder-image .title h1.parallax-title {
+      color: #fcd736;
+      font-size: 24px !important;
+      position: relative;
+      z-index: 9;
+      margin-top: 0; }
+    .container-hearder-image .title h2.parallax-subtitle {
+      color: #fcd736;
+      font-size: 14px !important;
+      margin-bottom: 0;
+      position: relative;
+      z-index: 9; }
+  .container-hearder-image .social {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9; }
+    .container-hearder-image .social i.icon {
+      color: rgba(252, 215, 54, 0.6);
+      font-size: 20px;
+      width: 20px; }
+
+/*  #Parallax Content
+===========================================*/
+.item-bcg {
+  min-height: 80px;
+  padding-left: 90px;
+  padding-right: 85px;
+  overflow: hidden;
+  background-color: #424242 !important;
+  border-color: #202020 !important; }
+  .item-bcg.item-thumbnail-left img {
+    top: 0;
+    left: 0; }
+  .item-bcg h2.item-title {
+    color: #fcd736;
+    font-size: 20px; }
+  .item-bcg h3.item-subtitle {
+    color: rgba(254, 254, 254, 0.6);
+    font-size: 12px;
+    margin-bottom: 0; }
+  .item-bcg .old-price {
+    top: 20px;
+    position: absolute;
+    right: 5px;
+    text-decoration: line-through; }
+    .item-bcg .old-price.span-small {
+      color: rgba(254, 254, 254, 0.6);
+      font-size: 12px; }
+  .item-bcg .new-price {
+    position: absolute;
+    right: 5px;
+    top: 40px; }
+    .item-bcg .new-price.span-medium {
+      color: #fcd736;
+      font-size: 24px; }

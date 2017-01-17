@@ -1,0 +1,228 @@
+// Include Main-Style.scss
+@import "main-style.scss";
+
+// General Theme
+.bar.bar-stable .title,
+.item h2,
+.item h3,
+a,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+p {
+  font-family: $font-name;
+  font-weight: $font-weight-value;
+}
+
+.button-default {
+  @include button( 'button-default');
+}
+// Menu Settings
+.main-menu {
+  background-color: transparent;
+  border-color: transparent;
+
+  .item-content {
+    padding-left: 30px;
+    background-color: theme-colors('mainColors', 'primary')!important;
+    color: theme-colors('textColors', 'primary');
+    font-size: 20px;
+  }
+
+  i.icon {
+    font-size: 20px;
+  }
+}
+// Color Background Body
+.menu-content-background,
+.pane {
+  background-color: $content-bcg;
+}
+// Big Images Container Background
+
+.container-background,
+.container-background-full,
+.container-hearder-image {
+  @include background-size;
+}
+// Pull To Refresher
+
+.scroll-refresher .ionic-refresher-content {
+  color: theme-colors('textColors', 'primary');
+}
+
+.spinner,
+.spinner-ios,
+.spinner-ios-small {
+  color: theme-colors('mainColors', 'secondary');
+  fill: theme-colors('mainColors', 'secondary');
+  stroke: theme-colors('mainColors', 'secondary');
+}
+// Home screen whit text
+.block-table {
+  width: 100%;
+  height: 100%;
+  display: table;
+
+  .scroll {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  //Ionic Descript
+  .ionic-descript {
+    color: theme-colors('mainColors', 'secondary');
+    padding: 0 20px;
+
+    h2 {
+      color: theme-colors('mainColors', 'secondary');
+      font-size: 24px;
+      margin-bottom: 3px;
+      margin-top: 0;
+    }
+
+    p {
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .ionic-documentation {
+    margin-top: 30%;
+    display: block;
+    text-decoration: underline;
+    color: #fff;
+    padding: 0 20px;
+  }
+}
+
+// Left Menu
+.left-menu-background {
+  @include background-size;
+  background-image: url('../img/background/29.jpg');
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+}
+.menu-panel span {
+  color: theme-colors('mainColors', 'secondary');
+  display: block;
+  clear: both;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+// Style Spinner Components
+
+.spinner-view {
+  .spinner img {
+    width: 100px;
+    height: 100px;
+    margin: 50% auto 0;
+    display: block;
+  }
+
+  .scroll {
+    height: 100%;
+  }
+
+  .slider {
+    height: 100%;
+  }
+
+  .slider-pager {
+    .ion-record:before {
+      color: theme-colors('mainColors', 'secondary');
+    }
+  }
+}
+
+.bar-subheader,
+.has-header {
+  top: $bar-height !important;
+}
+
+.list {
+  padding-top: 0;
+}
+
+//General Header
+
+.bar.bar-stable {
+  @include toolBar;
+
+  .title {
+    @include toolBar-title;
+  }
+  .button {
+    padding: 0 5px;
+    color: theme-colors('mainColors', 'primary');
+  }
+  // Button Buy Now
+  .buy-now {
+    color: theme-colors('mainColors', 'primary');
+    padding: 0 10px;
+    box-shadow: none;
+    border: 1px solid theme-colors('mainColors', 'primary');
+    margin-top: 5px;
+    font-weight: normal;
+  }
+}
+
+.back-text {
+  display: none !important;
+}
+//General toast settings
+#toast-container {
+  text-align: center;
+}
+
+.custom-toast {
+  width: auto;
+  display: inline-block;
+  margin-bottom: 0.8em;
+  word-break: break-all;
+}
+// Shape Images Size
+
+.shape-img-block {
+  width: 50%;
+  float: left;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+
+  img {
+    max-width: 100px;
+  }
+}
+
+
+.back-menu.btn {
+  border: 1px solid #fde800;
+  margin: 50% auto 0;
+  font-size: 16px;
+  color: theme-colors('mainColors', 'secondary');
+  font-weight: bold;
+
+  i.left {
+    margin-right: 0;
+  }
+}
+// Ios Style Settings
+
+.platform-ios {
+  .has-header {
+    top: 64px!important;
+  }
+
+  .bar-subheader {
+    @extend .has-header;
+  }
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > * {
+  margin-top: 10px;
+}

@@ -1,0 +1,67 @@
+//*  #Main Sass
+@import "../../../../../../scss/main-style.scss";
+/*  # Theme Centered with header
+===========================================*/
+.container-background {
+  height: 145px;
+  display: table;
+  width: 100%;
+  @include darkening-blend-mode;
+  position: relative;
+
+  .header-title {
+    @include header( 'header-title');
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 9999;
+    position: relative;
+  }
+}
+
+.collapsible {
+  margin: 0;
+  text-align: center;
+  border: 1px solid transparent;
+  box-shadow: none;
+
+  .icon-small {
+    @include icon( 'icon-small');
+    margin: 0 auto;
+    float: none;
+    line-height: 30px;
+  }
+
+  .item-bcg {
+    @include item( 'item-bcg');
+    border-color: transparent;
+    margin: 0;
+  }
+
+  .collapsible-header {
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    h2.item-title {
+      color: theme-colors('textColors', 'primary');
+      font-size: font-size-text('h4');
+      margin: 10px 0;
+    }
+  }
+
+  .collapsible-body {
+    border: none;
+
+    .subitem-bcg {
+      @include subitem( 'subitem-bcg');
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    h2.subitem-title {
+      color: theme-colors('textColors', 'primary');
+      font-size: font-size-text('h4');
+      padding: 15px 0;
+      margin: 0;
+    }
+  }
+}

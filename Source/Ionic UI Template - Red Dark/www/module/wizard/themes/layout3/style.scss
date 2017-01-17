@@ -1,0 +1,52 @@
+//*  #Main Sass
+@import "../../../../../scss/main-style.scss";
+
+/*  #Thema General Socail
+===========================================*/
+.scroll {
+    height: 100%;
+    min-height: 100%;
+}
+.slider {
+    height: 100%;
+}
+.container-background {
+  position: relative;
+    @include darkening-blend-mode;
+    .description {
+      width: 80%;
+      margin: 0 auto;
+      z-index: 9;
+      position: relative;
+    }
+}
+.slider-slides a {
+  &.button-flat {
+    @include button('button-flat');
+  }
+}
+h2.wizard-title {
+    @include wizard('wizard-title');
+    margin-top: 80px;
+}
+p.wizard-body-text{
+  @include wizard('wizard-body-text');
+}
+.bottom.button-flat {
+  @include button('button-flat');
+  position: absolute;
+  left: 50%;
+  margin-left: -60px;
+  min-width: 120px;
+  font-size: 24px;
+  bottom: 15px;
+  padding: 10px;
+  }
+.slider-pager {
+    bottom: 70px;
+    .ion-record:before {
+        font-family: 'Fontello';
+        content: "\e8b2";
+        color: #fff;
+    }
+}

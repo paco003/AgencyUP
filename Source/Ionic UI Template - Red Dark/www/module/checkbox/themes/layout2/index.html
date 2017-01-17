@@ -1,0 +1,13 @@
+<!--Themes Two columns -->
+<ion-list ng-show="{{checkboxController.data.length}}">
+	    <ion-item ng-repeat="item in checkboxController.data"
+			class="item-bcg waves-effect waves-block waves-light">
+	        <input type="checkbox" class="filled-in"
+					id="filled-in-box-{{$index}}" checked="checked" />
+	        <label for="filled-in-box-{{$index}}">
+						<h2 class="item-title">
+							{{item.title}}
+						</h2>
+					</label>
+	    </ion-item>
+</ion-list>

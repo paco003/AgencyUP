@@ -1,0 +1,113 @@
+//*  #Main Sass
+@import "../../../../../../scss/main-style.scss";
+/*  #Theme Products + CTA footer
+===========================================*/
+.container-background-full {
+  .item {
+    padding-right: 80px;
+    padding-top: 0;
+    padding-left: 90px;
+    min-height: 82px;
+  }
+  .list {
+    padding-bottom: 120px;
+  }
+  img {
+    top: 0 !important;
+    left: 0 !important;
+  }
+  .item-bcg {
+    @include item( 'item-bcg');
+  }
+  .item-title {
+    @include item( 'item-title');
+    padding-top: 5px;
+  }
+  .item-subtitle {
+    @include item( 'item-subtitle');
+  }
+}
+/*  #Content
+===========================================*/
+.slider {
+  height: auto;
+  .new-price {
+    position: absolute;
+    right: 5px;
+    top: 40px;
+    &.span-medium {
+      @include span( 'span-medium');
+    }
+  }
+  .old-price {
+    top: 20px;
+    position: absolute;
+    right: 5px;
+    text-decoration: line-through;
+    &.span-small {
+      @include span( 'span-small');
+    }
+  }
+  .swiped-item-bcg {
+    @include swiped-item( 'swiped-item-bcg');
+    width: 100%;
+    display: table;
+    height: 80px;
+    h2.swiped-item-title {
+      @include swiped-item( 'swiped-item-title');
+      margin: 0;
+    }
+    a {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+    }
+    a:first-child {
+      width: 60%;
+    }
+  }
+}
+/*  #Fixed block
+===========================================*/
+.footer-bcg {
+  @include footer-item( 'footer-bcg');
+  background-size: 100% 0;
+  .span-medium {
+    @include span( 'span-medium');
+    line-height: normal;
+    padding: 5px 10px;
+  }
+  &.bar {
+    padding: 0;
+    display: block;
+    height: auto;
+  }
+  h2.footer-title {
+    @include footer-item( 'footer-title');
+    margin-bottom: 0;
+    padding: 5px 10px;
+  }
+  .footer-subtitle {
+    @include footer-item( 'footer-subtitle');
+  }
+  .footer-half {
+    display: table-cell;
+    vertical-align: bottom;
+  }
+  .footer-content {
+    border-top: 1px solid #263238;
+    position: relative;
+    display: table;
+    width: 100%;
+    clear: both;
+    padding: 10px;
+    .footer-title {
+      @include footer-item( 'footer-title');
+      margin-top: 10px;
+      padding: 0;
+    }
+    .button-default {
+      @include button( 'button-default');
+    }
+  }
+}

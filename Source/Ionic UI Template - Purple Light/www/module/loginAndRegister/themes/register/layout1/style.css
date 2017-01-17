@@ -1,0 +1,57 @@
+/*  #Theme Register + image
+===================================================*/
+img {
+  max-width: 280px;
+  display: block;
+  float: right;
+  margin: 15px 0; }
+
+.form-input {
+  overflow: hidden;
+  clear: both; }
+
+/*  Form
+===========================================*/
+.input-field .prefix ~ input {
+  width: 90% !important; }
+
+.form-block {
+  padding-top: 40px;
+  margin: 0 50px; }
+
+.button-default {
+  background-color: #853a96 !important;
+  color: #fefefe !important;
+  font-size: 14px;
+  font-weight: normal;
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-right: 5px; }
+
+.input-field input + label {
+  left: -47px !important; }
+
+.input-field input {
+  font-size: 14px;
+  color: #9d9d9d;
+  border-bottom: 1px solid #692c90 !important;
+  font-weight: 300;
+  margin-left: 0 !important; }
+  .input-field input:focus:not([readonly]) {
+    color: #9d9d9d;
+    box-shadow: none; }
+  .input-field input + label {
+    color: #9d9d9d;
+    font-size: 14px;
+    left: 0;
+    top: 11px; }
+    .input-field input + label.active {
+      color: rgba(157, 157, 157, 0.6) !important;
+      font-size: 10px; }
+
+.input-field .icon-small {
+  color: #692c90 !important;
+  font-size: 18px !important;
+  text-align: right;
+  right: 0;
+  top: 10px; }

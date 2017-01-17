@@ -1,0 +1,80 @@
+// #Main Sass
+@import "../../../../../scss/main-style.scss";
+/*  #Thema Field + header
+===========================================*/
+.container-hearder-image {
+  height: auto;
+  padding: 0;
+  @include darkening-blend-mode;
+  @include background-size;
+  height: 168px!important;
+
+  .icon-small {
+    @include icon( 'icon-small');
+    margin: 0 5px;
+    width: 40px;
+    text-align: center;
+  }
+
+  h1.search-bar-title {
+    @include search( 'search-bar-title');
+    margin: 0 10px;
+    padding-top: 90px;
+    z-index: 1;
+    position: relative;
+  }
+
+  .search-bar-bcg {
+    @include search( 'search-bar-bcg');
+  }
+
+  .item.item-input {
+    border-color: transparent !important;
+    border-radius: $border-radius;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+
+    input {
+      @include search( 'input');
+      padding-right: 0;
+      padding-left: 10px;
+
+      &[type="search"] {
+        border-bottom: none !important;
+      }
+    }
+
+    i.icon:first-child {
+      border-right: 1px solid theme-colors('textColors', 'accent', 'opacity60');
+    }
+  }
+}
+/*  #List Content
+===========================================*/
+.list-content {
+  top: 225px!important;
+
+  .item-bcg {
+    @include item( 'item-bcg');
+  }
+
+  .icon-small {
+    @include icon( 'icon-small');
+  }
+
+  h2.item-title {
+    @include item( 'item-title');
+  }
+
+  h3.item-subtitle {
+    @include item( 'item-subtitle');
+  }
+}
+/*  #Ios Style
+===========================================*/
+.platform-ios .list-content {
+  top: 233px!important;
+}

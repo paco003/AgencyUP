@@ -1,0 +1,87 @@
+/*  Theme Small items + profile header
+===========================================*/
+.icon-small {
+  color: #ef4437 !important;
+  font-size: 20px !important; }
+
+.list {
+  padding: 0; }
+
+/*  Theme Images Top
+===========================================*/
+.container-hearder-image {
+  background-color: white;
+  background-blend-mode: luminosity;
+  height: 100px;
+  width: 100%; }
+  .container-hearder-image::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    background-color: rgba(38, 50, 56, 0.5); }
+  .container-hearder-image h1.header-title {
+    color: white;
+    font-size: 28px;
+    padding-top: 10px;
+    margin: 0; }
+  .container-hearder-image h2.header-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px; }
+  .container-hearder-image .item-avatar {
+    border-color: transparent !important;
+    padding-left: 90px; }
+    .container-hearder-image .item-avatar img {
+      max-width: 64px !important;
+      max-height: 64px !important; }
+
+/*  Theme Accordion
+===========================================*/
+.collapsible {
+  border: none;
+  box-shadow: none;
+  margin-top: 0; }
+  .collapsible .article.ng-hide {
+    line-height: 0; }
+  .collapsible .article.ng-hide-add,
+  .collapsible .article.ng-hide-remove {
+    display: block !important; }
+  .collapsible .active i.icon-chevron-down {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    right: 10px; }
+  .collapsible .collapsible-header {
+    background-color: transparent;
+    border: none;
+    padding: 0; }
+    .collapsible .collapsible-header .item-bcg {
+      background-color: rgba(55, 71, 79, 0.6) !important;
+      border-color: rgba(55, 71, 79, 0);
+      margin-bottom: 2px;
+      transition: all 0s ease-out; }
+    .collapsible .collapsible-header .item-title {
+      color: white;
+      font-size: 20px; }
+    .collapsible .collapsible-header .item-subtitle {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 16px; }
+  .collapsible .collapsible-body {
+    border: none; }
+    .collapsible .collapsible-body img {
+      margin-left: 5px; }
+    .collapsible .collapsible-body .item.subitem-bcg {
+      background-color: rgba(38, 50, 56, 0.6) !important;
+      border-color: rgba(38, 50, 56, 0) !important;
+      margin-bottom: 2px; }
+    .collapsible .collapsible-body .item .subitem-title {
+      color: white;
+      font-size: 16px;
+      line-height: normal;
+      padding-top: 10px; }
+    .collapsible .collapsible-body i.icon {
+      right: 19px; }

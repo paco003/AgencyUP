@@ -1,0 +1,56 @@
+/* # Theme Simple
+===========================================*/
+.search-bar-bcg {
+  height: auto;
+  padding: 0;
+  background-color: #263238; }
+  .search-bar-bcg input {
+    font-size: 16px;
+    color: white;
+    border-bottom: 1px solid white !important;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    height: 25px; }
+    .search-bar-bcg input::-webkit-input-placeholder {
+      font-size: 16px;
+      color: white; }
+    .search-bar-bcg input:focus:not([readonly]) {
+      color: white;
+      font-size: 16px;
+      box-shadow: none; }
+    .search-bar-bcg input::-webkit-input-placeholder {
+      font-weight: 300; }
+    .search-bar-bcg input:-moz-placeholder {
+      /* Firefox 18- */
+      font-weight: 300; }
+    .search-bar-bcg input::-moz-placeholder {
+      /* Firefox 19+ */
+      font-weight: 300; }
+    .search-bar-bcg input:-ms-input-placeholder {
+      font-weight: 300; }
+  .search-bar-bcg .icon-small {
+    color: #ef4437 !important;
+    font-size: 20px !important;
+    min-width: 40px;
+    text-align: center; }
+
+.list-content .list {
+  margin-top: 20px; }
+
+.list-content .item-bcg {
+  background-color: rgba(55, 71, 79, 0.6) !important;
+  border-color: rgba(55, 71, 79, 0);
+  margin-bottom: 2px;
+  transition: all 0s ease-out; }
+
+.list-content .icon-small {
+  color: #ef4437 !important;
+  font-size: 20px !important; }
+
+.list-content h2.item-title {
+  color: white;
+  font-size: 20px; }
+
+.list-content h3.item-subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px; }

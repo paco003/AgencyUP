@@ -1,0 +1,41 @@
+/*  # Theme With filtering check boxes
+================================================*/
+.search-bcg {
+  background-color: rgba(66, 66, 66, 0.6) !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  overflow: hidden; }
+  .search-bcg h1.search-title {
+    color: #fcd736;
+    font-size: 16px !important; }
+  .search-bcg .icon-small {
+    color: rgba(252, 215, 54, 0.6) !important;
+    font-size: 20px !important;
+    width: 40px;
+    text-align: center; }
+  .search-bcg .button-flat {
+    margin-top: 10px;
+    color: #fcd736 !important;
+    font-size: 16px; }
+  .search-bcg .search-bar-bcg {
+    background-color: #424242;
+    border-color: transparent;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding-left: 0; }
+    .search-bcg .search-bar-bcg input {
+      font-size: 14px;
+      color: #fcd736;
+      border-bottom: 1px solid #fcd736 !important;
+      margin: 5px 0; }
+      .search-bcg .search-bar-bcg input::-webkit-input-placeholder {
+        font-size: 14px;
+        color: #fcd736; }
+      .search-bcg .search-bar-bcg input:focus:not([readonly]) {
+        color: #fcd736;
+        font-size: 14px;
+        box-shadow: none; }

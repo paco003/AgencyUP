@@ -1,0 +1,105 @@
+/*  #Text Roboto Regular
+===========================================*/
+.components {
+  padding: 10px 20px; }
+  .components div {
+    margin-bottom: 10px; }
+  .components .block-components > .block-insert:last-child span {
+    padding-left: 15px; }
+  .components span {
+    display: block;
+    clear: both;
+    color: #bdbcbc;
+    margin-bottom: 10px; }
+  .components .block-insert {
+    display: block;
+    float: left;
+    margin-right: 50px; }
+  .components .block-badge {
+    float: left;
+    margin-right: 30px; }
+  .components .title-components {
+    color: #bdbcbc;
+    font-size: 16px;
+    font-weight: normal;
+    clear: both;
+    display: block;
+    margin: 15px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(189, 188, 188, 0.5); }
+  .components .example-h1 {
+    font-size: 36px;
+    color: #7fcac3;
+    line-height: normal; }
+  .components .example-h2 {
+    font-size: 24px;
+    color: #7fcac3;
+    line-height: normal; }
+  .components .example-h3 {
+    font-size: 18px;
+    color: #7fcac3; }
+  .components .example-h4 {
+    font-size: 16px;
+    color: #7fcac3; }
+  .components .example-h5 {
+    font-size: 14px;
+    color: #7fcac3; }
+  .components .example-h6 {
+    font-size: 12px;
+    color: #7fcac3; }
+  .components .example-p {
+    font-size: 14px;
+    color: #7fcac3; }
+  .components .span-small {
+    color: #00bea4;
+    font-size: 12px; }
+  .components .span-medium {
+    color: #00bea4;
+    font-size: 18px; }
+  .components .span-large {
+    color: white;
+    font-size: 36px;
+    line-height: normal; }
+  .components .block-components {
+    margin-bottom: 10px;
+    overflow: hidden; }
+  .components .button-default {
+    background-color: #81c784 !important;
+    color: white !important;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 10px 15px; }
+  .components .button-flat {
+    color: #7fcac3 !important;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 10px 15px; }
+  .components .badge-small {
+    background-color: #00bea4 !important;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+    font-size: 14px; }
+  .components .badge-medium {
+    background-color: #00bea4 !important;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 8px;
+    font-size: 24px; }
+  .components .badge-large {
+    background-color: #00bea4 !important;
+    color: white;
+    border-radius: 4px;
+    padding: 7px 10px;
+    font-size: 36px; }
+  .components .icon-small {
+    color: #00bea4 !important;
+    font-size: 20px !important; }
+  .components .icon-medium {
+    color: #00bea4 !important;
+    font-size: 24px !important; }
+  .components .icon-large {
+    color: #00bea4 !important;
+    font-size: 60px !important; }

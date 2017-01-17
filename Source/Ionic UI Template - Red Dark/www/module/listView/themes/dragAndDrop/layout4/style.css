@@ -1,0 +1,60 @@
+/*  # Themes Medium item with image
+===========================================*/
+.item-bcg {
+  background-color: rgba(55, 71, 79, 0.6) !important;
+  border-color: rgba(55, 71, 79, 0);
+  margin-bottom: 2px;
+  transition: all 0s ease-out; }
+  .item-bcg h2.item-title {
+    color: white;
+    font-size: 20px; }
+  .item-bcg h3.item-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px; }
+  .item-bcg .item-content {
+    background-color: transparent;
+    padding-right: 175px;
+    height: 100px; }
+  .item-bcg .item-images {
+    background-color: white;
+    background-blend-mode: luminosity;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 160px !important;
+    height: 100px !important; }
+    .item-bcg .item-images::before {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      pointer-events: none;
+      mix-blend-mode: multiply;
+      background-color: rgba(38, 50, 56, 0.5); }
+  .item-bcg span {
+    position: absolute;
+    float: right;
+    top: 70px;
+    right: 195px; }
+    .item-bcg span .span-medium {
+      color: #ef4437;
+      font-size: 20px;
+      line-height: 24px; }
+    .item-bcg span .icon-small {
+      color: #ef4437 !important;
+      font-size: 20px !important;
+      display: block;
+      float: left; }
+  .item-bcg .item-right-edit {
+    background-color: transparent; }
+    .item-bcg .item-right-edit.visible.active {
+      background-color: transparent !important; }
+    .item-bcg .item-right-edit.item-reorder {
+      padding: 0; }
+      .item-bcg .item-right-edit.item-reorder .button.icon {
+        font-size: 32px !important;
+        color: #ef4437 !important;
+        right: 0; }

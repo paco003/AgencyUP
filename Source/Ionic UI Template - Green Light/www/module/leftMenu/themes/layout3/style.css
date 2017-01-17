@@ -1,0 +1,73 @@
+/*  # Theme Left menu + profile header
+===========================================*/
+.view {
+  background-color: transparent;
+  z-index: 0; }
+
+.hero {
+  background: #00bea4;
+  background: -moz-linear-gradient(45deg, #00bea4 0%, #81c784 100%);
+  background: -webkit-linear-gradient(45deg, #00bea4 0%, #81c784 100%);
+  background: linear-gradient(45deg, #00bea4 0%, #81c784 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bea4', endColorstr='#81c784',GradientType=1 );
+  overflow: hidden;
+  height: 180px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+  .hero h1.header-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 0; }
+  .hero h2.header-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    margin-top: 0; }
+  .hero .icon-small {
+    color: white;
+    font-size: 20px !important; }
+  .hero p {
+    color: white;
+    font-size: 14px !important; }
+  .hero img {
+    max-width: 64px !important;
+    max-height: 64px !important; }
+  .hero .half {
+    width: 50%;
+    padding: 5px 0;
+    float: left; }
+  .hero .item-icon-left {
+    padding-left: 45px;
+    border-color: transparent; }
+  .hero .item-avatar {
+    padding-left: 90px; }
+
+/*  # Menu List
+===========================================*/
+.menu-list {
+  top: 180px; }
+  .menu-list .item-bcg {
+    background-color: rgba(244, 245, 245, 0.8) !important;
+    border-width: 0;
+    margin: 0;
+    transition: all 0s ease-out;
+    margin: 0; }
+  .menu-list h2.item-title {
+    color: #7fcac3;
+    font-size: 14px; }
+  .menu-list h3.item-subtitle {
+    color: #bdbcbc;
+    font-size: 14px; }
+  .menu-list .icon-small {
+    color: #00bea4 !important;
+    font-size: 20px !important; }
+  .menu-list .badge-small {
+    background-color: #00bea4 !important;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+    font-size: 14px;
+    top: 25px;
+    right: 20px;
+    min-width: auto !important;
+    font-weight: normal; }

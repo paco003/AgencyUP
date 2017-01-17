@@ -1,0 +1,30 @@
+/*  # Theme With 2 funcional icon
+===========================================*/
+.item-bcg {
+  background-color: rgba(55, 71, 79, 0.6) !important;
+  border-color: rgba(55, 71, 79, 0);
+  margin-bottom: 2px;
+  transition: all 0s ease-out;
+  margin-bottom: 2px; }
+  .item-bcg h2.item-title {
+    color: white;
+    font-size: 20px;
+    line-height: normal; }
+  .item-bcg .button-flat {
+    color: white !important;
+    font-size: 16px;
+    font-weight: 400 !important;
+    padding-right: 0; }
+  .item-bcg .icon-small {
+    color: #ef4437 !important;
+    font-size: 20px !important; }
+  .item-bcg input[type="checkbox"].filled-in:checked + label:after {
+    border: 2px solid #ef4437;
+    background-color: #ef4437; }
+  .item-bcg input[type="checkbox"].filled-in:not(:checked) + label:after {
+    border: 2px solid #ef4437 !important; }
+  .item-bcg input[type="checkbox"].filled-in:checked + label:before {
+    border-right: 2px solid #263238;
+    border-bottom: 2px solid #263238; }
+  .item-bcg input[type="checkbox"] + label {
+    margin-top: 10px; }

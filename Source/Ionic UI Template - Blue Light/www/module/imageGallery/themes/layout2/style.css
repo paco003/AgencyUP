@@ -1,0 +1,32 @@
+/*  # Gallery contact
+===========================================*/
+.gallery-title h2.item-title {
+  color: white;
+  font-size: 18px; }
+
+.card.half {
+  width: 50%;
+  display: block;
+  float: left;
+  background-color: transparent;
+  box-shadow: none;
+  margin: 0; }
+
+.card-image {
+  height: 140px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 5px; }
+
+.gallery-title {
+  background: -moz-linear-gradient(top, rgba(2, 154, 228, 0.51) 0%, rgba(2, 154, 228, 0.5) 100%);
+  background: -webkit-linear-gradient(top, rgba(2, 154, 228, 0.51) 0%, rgba(2, 154, 228, 0.5) 100%);
+  background: linear-gradient(to bottom, rgba(2, 154, 228, 0.51) 0%, rgba(2, 154, 228, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82029ae4', endColorstr='#80029ae4',GradientType=0 );
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  bottom: 0;
+  min-height: 45px; }

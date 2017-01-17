@@ -1,0 +1,54 @@
+/*  #Theme Register + image
+===================================================*/
+img {
+  max-width: 280px;
+  display: block;
+  float: right;
+  margin: 15px 0; }
+
+.form-input {
+  overflow: hidden;
+  clear: both; }
+
+/*  Form
+===========================================*/
+.input-field .prefix ~ input {
+  width: 90% !important; }
+
+.form-block {
+  padding-top: 40px;
+  margin: 0 50px; }
+
+.button-flat {
+  color: white !important;
+  font-size: 16px;
+  font-weight: 400 !important;
+  margin-top: 15px;
+  margin-right: 25px; }
+
+.input-field input + label {
+  left: -47px !important; }
+
+.input-field input {
+  font-size: 16px;
+  color: white;
+  border-bottom: 1px solid white !important;
+  margin-left: 0 !important; }
+  .input-field input:focus:not([readonly]) {
+    color: white;
+    box-shadow: none; }
+  .input-field input + label {
+    color: white;
+    font-size: 16px;
+    left: 0;
+    top: 11px; }
+    .input-field input + label.active {
+      color: rgba(255, 255, 255, 0.6) !important;
+      font-size: 10px; }
+
+.input-field .icon-small {
+  color: #ef4437 !important;
+  font-size: 20px !important;
+  text-align: right;
+  right: 0;
+  top: 10px; }

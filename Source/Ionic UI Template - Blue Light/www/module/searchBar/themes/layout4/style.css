@@ -1,0 +1,85 @@
+/*  #Thema Field + header
+===========================================*/
+.container-hearder-image {
+  height: auto;
+  padding: 0;
+  background-color: white;
+  background-blend-mode: luminosity;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 168px !important; }
+  .container-hearder-image::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    background-color: #b1eaf1; }
+  .container-hearder-image .icon-small {
+    color: #80d3f9 !important;
+    font-size: 20px !important;
+    margin: 0 5px;
+    width: 40px;
+    text-align: center; }
+  .container-hearder-image h1.search-bar-title {
+    color: white;
+    font-size: 20px !important;
+    margin: 0 10px;
+    padding-top: 90px;
+    z-index: 1;
+    position: relative; }
+  .container-hearder-image .search-bar-bcg {
+    background-color: #029ae4; }
+  .container-hearder-image .item.item-input {
+    border-color: transparent !important;
+    border-radius: 4px;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px; }
+    .container-hearder-image .item.item-input input {
+      font-size: 14px;
+      color: white;
+      border-bottom: 1px solid white !important;
+      padding-right: 0;
+      padding-left: 10px; }
+      .container-hearder-image .item.item-input input::-webkit-input-placeholder {
+        font-size: 14px;
+        color: white; }
+      .container-hearder-image .item.item-input input:focus:not([readonly]) {
+        color: white;
+        font-size: 14px;
+        box-shadow: none; }
+      .container-hearder-image .item.item-input input[type="search"] {
+        border-bottom: none !important; }
+    .container-hearder-image .item.item-input i.icon:first-child {
+      border-right: 1px solid rgba(255, 255, 255, 0.6); }
+
+/*  #List Content
+===========================================*/
+.list-content {
+  top: 225px !important; }
+  .list-content .item-bcg {
+    background-color: #f9fafa !important;
+    border-color: #eeeeee !important;
+    transition: all 0s ease-out; }
+  .list-content .icon-small {
+    color: #80d3f9 !important;
+    font-size: 20px !important; }
+  .list-content h2.item-title {
+    color: #757575;
+    font-size: 14px; }
+  .list-content h3.item-subtitle {
+    color: rgba(117, 117, 117, 0.6);
+    font-size: 14px; }
+
+/*  #Ios Style
+===========================================*/
+.platform-ios .list-content {
+  top: 233px !important; }

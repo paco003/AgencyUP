@@ -1,0 +1,87 @@
+//*  #Main Sass
+@import "../../../../../scss/main-style.scss";
+/* # Theme Field + header 2
+===========================================*/
+.container-hearder-image {
+  @include darkening-blend-mode;
+  @include background-size;
+  padding: 0;
+  height: 155px!important;
+
+  .item-input {
+    border-color: transparent;
+    border-radius: 4px;
+    padding: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+
+    i.icon:first-child {
+      border-right: 1px solid theme-colors('textColors', 'primary');
+    }
+  }
+
+  input {
+    @include search( 'input');
+    padding-left: 10px;
+    padding-right: 0;
+
+    &[type="search"] {
+      border-bottom: none !important;
+    }
+  }
+
+  .search-bar-bcg {
+    @include search( 'search-bar-bcg');
+  }
+
+  .icon-small {
+    @include icon( 'icon-small');
+    width: 40px;
+    text-align: center;
+  }
+}
+/*  #List Content
+===========================================*/
+.list-content {
+  top: 212px!important;
+
+  .item-bcg {
+    @include item( 'item-bcg');
+    padding-right: 90px;
+  }
+
+  h2.item-title {
+    @include item( 'item-title');
+  }
+
+  h3.item-subtitle {
+    @include item( 'item-subtitle');
+    padding-top: 15px;
+  }
+
+  .icon-small {
+    @include icon( 'icon-small');
+  }
+
+  .span-medium {
+    @include span( 'span-medium');
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+  }
+
+  i.icon:nth-child(1) {
+    top: -15px;
+  }
+
+  i.icon:nth-child(2) {
+    top: 15px;
+  }
+}
+/*  #Ios Style
+===========================================*/
+.platform-ios .list-content {
+  top: 220px!important;
+}

@@ -1,0 +1,58 @@
+/*  # Theme Simple
+===========================================*/
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-blend-mode: luminosity;
+  height: 200px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+  .hero::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+    background: #00bea4;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #00bea4 0%, #81c784 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #00bea4 0%, #81c784 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #00bea4 0%, #81c784 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bea4', endColorstr='#81c784',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
+  .hero h2.header-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    position: absolute;
+    bottom: 5px; }
+
+/*  # Menu List
+===========================================*/
+.menu-list {
+  top: 200px;
+  color: #616262;
+  line-height: normal;
+  font-size: 16px !important; }
+  .menu-list .item-bcg {
+    background-color: rgba(244, 245, 245, 0.8) !important;
+    border-width: 0;
+    margin: 0;
+    transition: all 0s ease-out;
+    margin: 0; }
+  .menu-list h2.item-title {
+    color: #7fcac3;
+    font-size: 14px;
+    line-height: normal; }
+  .menu-list .icon-small {
+    color: #00bea4 !important;
+    font-size: 20px !important; }

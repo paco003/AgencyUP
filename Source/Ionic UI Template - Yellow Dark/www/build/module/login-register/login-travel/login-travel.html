@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle >
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>LOGIN TRAVEL</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!--Theme LoginAndRegister Travel-->
+<ion-content class="container-image has-header">
+    <!--Theme LoginAndRegister Travel Logo-->
+    <img [src]="data.logo" />
+    <!--Theme LoginAndRegister Travel Form-->
+    <div class="form-block">
+        <div class="form">
+            <div class="input-field">
+                <i class="icon prefix {{data.iconAccount}}"></i>
+                <input id="username" type="text" [(ngModel)]="username">
+                <label for="username">{{data.username}}</label>
+            </div>
+            <div class="input-field">
+                <i class="icon prefix {{data.iconLock}}"></i>
+                <input id="password" type="password" [(ngModel)]="password">
+                <label for="password">{{data.password}}</label>
+            </div>
+        </div>
+        <button
+          class="button-form waves-effect waves-light btn-flat light-blue right"
+          (click)="onClick('onRegister')">
+          {{data.register}}
+        </button>
+        <button
+          class="button-form waves-effect waves-light btn-flat light-blue right"
+          (click)="onClick('onLogin')">
+          {{data.login}}
+        </button>
+    </div>
+    <button
+      class="button-form-skip waves-effect waves-light btn-flat disabled right"
+      (click)="onClick('onSkip')">
+      {{data.skip}}
+    </button>
+</ion-content>

@@ -1,0 +1,90 @@
+//*  #Main Sass
+@import "../../../../../../scss/main-style.scss";
+/*  # Theme Small item + header
+================================================*/
+.icon-medium {
+  @include icon( 'icon-medium');
+}
+
+.header-bcg {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  border: none;
+  @include header( 'header-bcg');
+
+  .item {
+    border-color: transparent;
+    width: 100%;
+    display: table;
+    border: none;
+  }
+
+  .half {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+
+    h1.header-title {
+      @include header( 'header-title');
+      margin-bottom: 0;
+    }
+
+    h2.header-subtitle {
+      @include header( 'header-subtitle');
+    }
+
+    .icon-medium {
+      color: theme-colors('textColors', 'accent') !important;
+      font-size: icon-size('icon-medium') !important;
+    }
+
+    .span-medium {
+      color: theme-colors('textColors', 'accent');
+      font-size: font-size-text('h3');
+      font-weight: bold;
+    }
+  }
+}
+
+.drag-and-drop {
+  top: 130px !important;
+
+  .item-bcg {
+    @include item( 'item-bcg');
+  }
+
+  .item-title {
+    @include item( 'item-title');
+    line-height: normal;
+  }
+
+  .item-subtitle {
+    @include item( 'item-subtitle');
+    line-height: normal;
+  }
+
+  .list i.icon {
+    font-size: 30px;
+  }
+
+  .item-content {
+    padding-left: 70px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: transparent;
+  }
+
+  .enable-pointer-events,
+  .item-radio .item-content {
+    background-color: transparent;
+  }
+
+  .item-right-edit {
+    background-color: transparent;
+
+    .button-icon.icon:before {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+//*  #Main Sass
+@import "../../../../../scss/main-style.scss";
+/*  #Thema General
+===========================================*/
+.logo-down {
+  max-width: 100px;
+  position: relative;
+  margin-top: 50% !important;
+  left: 50%;
+  -webkit-animation: slideInDown 5s;
+  animation: slideInDown 5s;
+}

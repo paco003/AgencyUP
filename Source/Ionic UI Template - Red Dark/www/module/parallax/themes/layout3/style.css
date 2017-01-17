@@ -1,0 +1,93 @@
+/*  #Thema Parallax Profile
+===========================================*/
+.container-hearder-image {
+  background-color: white;
+  background-blend-mode: luminosity;
+  display: table;
+  width: 100%;
+  height: 15em;
+  z-index: 999;
+  position: relative; }
+  .container-hearder-image::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    background-color: rgba(38, 50, 56, 0.5); }
+  .container-hearder-image .title {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    z-index: 9; }
+    .container-hearder-image .title h1.parallax-title {
+      color: white;
+      font-size: 28px !important;
+      margin: 0; }
+    .container-hearder-image .title h2.parallax-subtitle {
+      color: white;
+      font-size: 16px !important; }
+
+.block-avatar {
+  position: relative;
+  padding: 10px; }
+  .block-avatar .span-small {
+    color: #ef4437;
+    font-size: 12px; }
+  .block-avatar .icon-small {
+    color: #ef4437 !important;
+    font-size: 20px !important;
+    margin: 0; }
+  .block-avatar .avatar {
+    height: 86px;
+    width: 86px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -43px;
+    margin-bottom: -20px;
+    z-index: 999; }
+
+.parallax-list .list {
+  margin-top: 40px; }
+
+.parallax-list .item {
+  border-color: transparent;
+  background-color: transparent; }
+
+.parallax-list h2.card-title {
+  color: white;
+  font-size: 20px !important; }
+
+.parallax-list h3.card-subtitle {
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-size: 16px; }
+
+.parallax-list .card {
+  box-shadow: none !important; }
+  .parallax-list .card .card-bcg {
+    background-color: rgba(55, 71, 79, 0.6) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 20px !important; }
+    .parallax-list .card .card-bcg h2.card-title {
+      color: white;
+      font-size: 20px !important; }
+    .parallax-list .card .card-bcg h3.card-subtitle {
+      color: rgba(255, 255, 255, 0.6) !important;
+      font-size: 16px; }
+  .parallax-list .card .button-default {
+    background-color: #ef4437 !important;
+    color: white !important;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 400 !important;
+    width: 32%;
+    padding: 0; }
+  .parallax-list .card img {
+    border-radius: 4px; }

@@ -1,0 +1,24 @@
+/*  # Theme With avatar
+===========================================*/
+.item-bcg {
+  background-color: #424242 !important;
+  border-color: #202020 !important;
+  border: 1px solid #202020; }
+  .item-bcg h2.item-title {
+    color: #fcd736;
+    font-size: 20px;
+    padding-right: 45px;
+    padding-top: 5px; }
+  .item-bcg input[type="checkbox"].filled-in:checked + label:after {
+    border: 2px solid #fcd736;
+    background-color: #fcd736; }
+  .item-bcg input[type="checkbox"].filled-in:not(:checked) + label:after {
+    border: 2px solid #fcd736 !important; }
+  .item-bcg input[type="checkbox"].filled-in:checked + label:before {
+    border-right: 2px solid #424242;
+    border-bottom: 2px solid #424242; }
+  .item-bcg input[type="checkbox"] + label {
+    margin: 10px 0 0;
+    position: absolute;
+    right: 0;
+    top: 15px; }

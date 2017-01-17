@@ -1,0 +1,20 @@
+//*  #Main Sass
+@import "../../../../../scss/main-style.scss";
+/*  #Theme Simple 2
+===========================================*/
+.checkbox-block {
+  .item {
+    border: $item-divider-small;
+  }
+  .item-bcg {
+    @include item( 'item-bcg');
+  }
+  h2{
+    &.item-title {
+      @include item( 'item-title');
+    }
+  }
+  input[type="checkbox"] {
+    @include checkbox-item('input[type="checkbox"]');
+  }
+}

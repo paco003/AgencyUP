@@ -1,0 +1,36 @@
+/*  # Theme Account header
+===========================================*/
+.hero {
+  padding: 25px 0;
+  height: 201px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fcd736; }
+  .hero img {
+    height: 104px;
+    width: 104px;
+    border-radius: 50%; }
+  .hero h1.header-title {
+    color: #424242;
+    font-size: 24px;
+    margin: 5px 0 0; }
+  .hero h2.header-subtitle {
+    color: #424242;
+    font-size: 14px; }
+
+/*  # Theme Account header Menu list
+===========================================*/
+.has-header-media {
+  margin-top: 200px; }
+  .has-header-media .item-icon-left {
+    padding-left: 70px; }
+  .has-header-media .item-bcg {
+    background-color: #424242 !important;
+    border-color: #202020 !important; }
+    .has-header-media .item-bcg h2.item-title {
+      color: #fcd736;
+      font-size: 20px;
+      line-height: normal; }
+    .has-header-media .item-bcg .icon-small {
+      color: rgba(252, 215, 54, 0.6) !important;
+      font-size: 20px !important;
+      left: 30px; }

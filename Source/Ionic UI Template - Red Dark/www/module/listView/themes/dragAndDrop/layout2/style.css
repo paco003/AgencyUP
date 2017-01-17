@@ -1,0 +1,101 @@
+/*  # Theme Products + CTA header
+==========================================*/
+.container-hearder-image {
+  height: 140px !important;
+  background-color: white;
+  background-blend-mode: luminosity;
+  display: table;
+  width: 100%; }
+  .container-hearder-image::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    background-color: rgba(38, 50, 56, 0.5); }
+  .container-hearder-image .half {
+    display: table-cell;
+    vertical-align: bottom;
+    padding: 5px;
+    z-index: 9999;
+    position: relative; }
+    .container-hearder-image .half .span-large {
+      color: #ef4437;
+      font-size: 28px;
+      margin-bottom: 20px; }
+  .container-hearder-image h1.header-title {
+    color: white;
+    font-size: 28px;
+    margin: 0; }
+  .container-hearder-image h2.header-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    margin-bottom: 0;
+    font-style: italic; }
+  .container-hearder-image .button-default {
+    background-color: #ef4437 !important;
+    color: white !important;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 400 !important;
+    clear: both; }
+
+/*  #CONTENT
+==========================================*/
+.drag-and-drop {
+  top: 196px !important; }
+  .drag-and-drop .item-bcg {
+    background-color: rgba(55, 71, 79, 0.6) !important;
+    border-color: rgba(55, 71, 79, 0);
+    margin-bottom: 2px;
+    transition: all 0s ease-out; }
+  .drag-and-drop h2.item-title {
+    color: white;
+    font-size: 20px;
+    margin: 0; }
+  .drag-and-drop h3.item-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px; }
+  .drag-and-drop .span-large {
+    color: #ef4437;
+    font-size: 28px;
+    margin: 6px 0; }
+  .drag-and-drop .span-medium {
+    color: #ef4437;
+    font-size: 20px;
+    text-decoration: line-through;
+    margin-top: -5px; }
+  .drag-and-drop img {
+    max-width: 100px !important;
+    max-height: 102px !important;
+    width: 100px !important;
+    height: 102px !important;
+    left: 0 !important;
+    top: 0 !important; }
+  .drag-and-drop .item-content {
+    padding-bottom: 0;
+    background-color: transparent; }
+  .drag-and-drop .item-right-edit {
+    background-color: transparent;
+    width: 40px;
+    padding-left: 0; }
+    .drag-and-drop .item-right-edit.item-reorder .button.icon {
+      right: 0;
+      padding: 0;
+      border-radius: 0 !important;
+      background-color: #ef4437 !important;
+      color: white !important;
+      font-size: 16px;
+      border-radius: 4px;
+      font-weight: 400 !important; }
+    .drag-and-drop .item-right-edit .button {
+      min-width: 40px; }
+
+/*  #Ios Style
+==========================================*/
+.platform-ios .content-list {
+  top: 204px !important; }

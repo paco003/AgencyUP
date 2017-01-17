@@ -1,0 +1,75 @@
+/*  #Theme Login + logo
+================================================*/
+img {
+  margin: 0 auto;
+  display: block;
+  clear: both;
+  max-width: 100px; }
+
+.button-flat {
+  margin: 10px;
+  color: #7fcac3 !important;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px; }
+
+.form-block {
+  margin: 0 25px;
+  overflow: hidden;
+  /* Style Social Network
+  ===========================================*/ }
+  .form-block .form-input {
+    overflow: hidden; }
+  .form-block .button-default {
+    margin-left: 10px;
+    background-color: #81c784 !important;
+    color: white !important;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px; }
+  .form-block .social {
+    margin: 40px auto 0;
+    overflow: hidden; }
+    .form-block .social p {
+      color: #7fcac3;
+      font-size: 16px; }
+    .form-block .social .button-social {
+      font-size: 16px;
+      color: #fff;
+      border-radius: 4px;
+      padding: 7px 10px;
+      width: 49%;
+      text-align: center;
+      float: left;
+      display: block;
+      margin-right: 5px;
+      margin-bottom: 5px; }
+    .form-block .social > .button-social:nth-child(3) {
+      margin-right: 0; }
+    .form-block .social > .button-social:nth-child(5) {
+      margin-right: 0; }
+
+.input-field {
+  margin-bottom: 25px; }
+  .input-field input {
+    font-size: 14px;
+    color: #7fcac3;
+    border-bottom: 1px solid #7fcac3 !important;
+    font-weight: 300; }
+    .input-field input:focus:not([readonly]) {
+      color: #7fcac3;
+      box-shadow: none; }
+    .input-field input + label {
+      color: #7fcac3;
+      font-size: 14px;
+      left: 0;
+      top: 11px; }
+      .input-field input + label.active {
+        color: rgba(127, 202, 195, 0.6) !important;
+        font-size: 14px; }
+  .input-field .icon-small {
+    color: #00bea4 !important;
+    font-size: 20px !important;
+    text-align: center;
+    left: 5px;
+    top: 15px; }

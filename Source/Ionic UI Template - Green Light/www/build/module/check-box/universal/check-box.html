@@ -1,0 +1,10 @@
+<!--Themes Universal Checkbox -->
+<ion-list *ngIf="data.length" class="list-check">
+  <ion-item *ngFor="let item of data; let i = index" class="checkbox-block waves-effect waves-block waves-dark">
+     <input type="checkbox" class="filled-in" id="filled-in-box-{{i}}" (click)="onClick('onChange', item)" checked="checked" />
+     <label class="right" attr.for="filled-in-box-{{i}}">{{item.title}}</label>
+     <button class="btn-flat right" (click)="onClick('onButton', item)">
+        <i class="icon" [ngClass]="{'icon-heart': item.favorite, 'icon-heart-outline': !item.favorite}"></i>
+     </button>
+  </ion-item>
+</ion-list>

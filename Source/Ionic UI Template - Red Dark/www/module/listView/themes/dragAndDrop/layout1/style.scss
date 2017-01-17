@@ -1,0 +1,81 @@
+//*  #Main Sass
+@import "../../../../../../scss/main-style.scss";
+/*  #Theme Small item + header
+================================================*/
+.icon-medium {
+  @include icon( 'icon-medium');
+}
+/*  #Theme Header
+================================================*/
+.header-bcg {
+  width: 100%;
+  height: auto;
+  display: table;
+  padding: 5px;
+  margin: 0;
+  background-size: 100% 0;
+  @include header( 'header-bcg');
+
+  .item {
+    border: none;
+  }
+
+  .half {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 20px;
+
+    h1.header-title {
+      @include header( 'header-title');
+      margin-bottom: 0;
+    }
+
+    h2.header-subtitle {
+      @include header( 'header-subtitle');
+    }
+
+    .span-large {
+      @include span( 'span-large');
+    }
+  }
+}
+/*  #Theme Content
+================================================*/
+.drag-and-drop {
+  top: 150px !important;
+
+  .item-bcg {
+    @include item( 'item-bcg');
+    border-color: transparent;
+  }
+
+  .item-title {
+    @include item( 'item-title');
+    line-height: normal;
+  }
+
+  .item-subtitle {
+    @include item( 'item-subtitle');
+    line-height: normal;
+  }
+
+  .list i.icon {
+    font-size: 30px;
+  }
+
+  .item-content {
+    padding-left: 70px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: transparent;
+  }
+
+  .enable-pointer-events,
+  .item-radio .item-content {
+    background-color: transparent;
+  }
+
+  .item-right-edit {
+    background-color: transparent;
+  }
+}

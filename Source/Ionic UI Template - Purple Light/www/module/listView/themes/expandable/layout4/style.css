@@ -1,0 +1,84 @@
+/*  Theme Centered with header
+===========================================*/
+.container-hearder-image {
+  height: 145px;
+  display: table;
+  width: 100%;
+  position: relative; }
+  .container-hearder-image::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    background-color: rgba(66, 66, 66, 0.6); }
+  .container-hearder-image .header-title {
+    color: white;
+    font-size: 22px;
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 9999;
+    position: relative; }
+
+/*  Theme Centered with header Content
+===========================================*/
+.collapsible {
+  margin: 0;
+  text-align: center;
+  box-shadow: none; }
+  .collapsible .icon-small {
+    color: #692c90 !important;
+    font-size: 18px !important;
+    margin: 0 auto;
+    float: none;
+    line-height: 30px; }
+  .collapsible .item {
+    position: relative;
+    border: none; }
+    .collapsible .item.item-bcg {
+      background-color: #fefefe !important;
+      border-color: #f4f5f5 !important;
+      transition: all 0 ease-out;
+      margin: 0; }
+      .collapsible .item.item-bcg::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 50%;
+        left: 25%;
+        height: 1px;
+        background-color: #f4f5f5; }
+  .collapsible .collapsible-header {
+    padding-top: 15px;
+    padding-bottom: 10px; }
+    .collapsible .collapsible-header h2.item-title {
+      color: #9d9d9d;
+      font-size: 14px;
+      line-height: normal;
+      margin: 10px 0; }
+  .collapsible .collapsible-body {
+    border: none; }
+    .collapsible .collapsible-body .subitem-bcg {
+      background-color: #fefefe !important;
+      border-color: #f4f5f5 !important; }
+      .collapsible .collapsible-body .subitem-bcg::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 70%;
+        left: 15%;
+        height: 1px;
+        background-color: #f4f5f5; }
+    .collapsible .collapsible-body h2.subitem-title {
+      color: #bdbcbc;
+      font-size: 14px;
+      line-height: normal;
+      padding: 15px 0;
+      margin: 0; }
+    .collapsible .collapsible-body .item {
+      margin: 0 auto;
+      padding: 0; }

@@ -1,0 +1,132 @@
+//  # Main Sass
+@import "../../../scss/main-style.scss";
+/*  #Text Roboto Regular
+===========================================*/
+.components {
+  padding: 10px 20px;
+
+  div {
+    margin-bottom: 10px;
+  }
+
+  .block-components > .block-insert:last-child span {
+    padding-left: 15px;
+  }
+
+  span {
+    display: block;
+    clear: both;
+    color: theme-colors('textColors', 'secondary');
+    margin-bottom: 10px;
+  }
+
+  .block-insert {
+    display: block;
+    float: left;
+    margin-right: 50px;
+  }
+
+  .block-badge {
+    float: left;
+    margin-right: 30px;
+  }
+
+  .title-components {
+    color: theme-colors('textColors', 'secondary');
+    font-size: 16px;
+    font-weight: normal;
+    clear: both;
+    display: block;
+    margin: 15px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid theme-colors('textColors', 'secondary', 'opacity50');
+  }
+
+  .example-h1 {
+    font-size: font-size-text('h1');
+    color: theme-colors('textColors', 'primary');
+    line-height: normal;
+  }
+
+  .example-h2 {
+    font-size: font-size-text('h2');
+    color: theme-colors('textColors', 'primary');
+    line-height: normal;
+  }
+
+  .example-h3 {
+    font-size: font-size-text('h3');
+    color: theme-colors('textColors', 'primary');
+  }
+
+  .example-h4 {
+    font-size: font-size-text('h4');
+    color: theme-colors('textColors', 'primary');
+  }
+
+  .example-h5 {
+    font-size: font-size-text('h5');
+    color: theme-colors('textColors', 'primary');
+  }
+
+  .example-h6 {
+    font-size: font-size-text('h6');
+    color: theme-colors('textColors', 'primary');
+  }
+
+  .example-p {
+    font-size: font-size-text('p');
+    color: theme-colors('textColors', 'primary');
+  }
+
+  .span-small {
+    @include span( 'span-small');
+  }
+
+  .span-medium {
+    @include span( 'span-medium');
+  }
+
+  .span-large {
+    @include span( 'span-large');
+  }
+  // Components Button
+  .block-components {
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  .button-default {
+    @include button( 'button-default');
+    padding: 10px 15px;
+  }
+
+  .button-flat {
+    @include button( 'button-flat');
+    padding: 10px 15px;
+  }
+
+  .badge-small {
+    @include badge( 'badge-small');
+  }
+
+  .badge-medium {
+    @include badge( 'badge-medium');
+  }
+
+  .badge-large {
+    @include badge( 'badge-large');
+  }
+
+  .icon-small {
+    @include icon( 'icon-small');
+  }
+
+  .icon-medium {
+    @include icon( 'icon-medium');
+  }
+
+  .icon-large {
+    @include icon( 'icon-large');
+  }
+}

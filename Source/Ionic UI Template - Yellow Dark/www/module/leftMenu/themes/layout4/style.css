@@ -1,0 +1,60 @@
+/*  # Theme Full width
+===========================================*/
+.hero {
+  background-color: white;
+  background-blend-mode: luminosity;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+  .hero::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    background-color: #424242; }
+  .hero .icon-large {
+    color: rgba(252, 215, 54, 0.6) !important;
+    font-size: 60px !important;
+    margin-top: 40px;
+    display: block;
+    z-index: 9;
+    position: relative; }
+  .hero h1.header-title {
+    color: #fcd736;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    z-index: 9;
+    position: relative; }
+
+/*  # Menu Content
+===========================================*/
+.menu-left-list {
+  margin-top: 198px; }
+  .menu-left-list .item-bcg {
+    background-color: #424242 !important;
+    border-color: #202020 !important; }
+  .menu-left-list h2.item-title {
+    color: #fcd736;
+    font-size: 20px;
+    padding-left: 30px; }
+  .menu-left-list .icon-small {
+    color: rgba(252, 215, 54, 0.6) !important;
+    font-size: 20px !important;
+    margin-left: 25px; }
+
+.menu-left {
+  width: 90% !important; }
+
+.menu-open .menu-content {
+  transform: translate3d(90%, 0px, 0px) !important;
+  -ms-transform: translate3d(90%, 0px, 0px) !important;
+  -webkit-transform: translate3d(90%, 0px, 0px) !important; }

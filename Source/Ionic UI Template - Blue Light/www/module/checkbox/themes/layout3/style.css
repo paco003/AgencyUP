@@ -1,0 +1,32 @@
+/*  #Theme With avatar
+===========================================*/
+.checkbox-block .item {
+  border: 1px solid #4ec2f6; }
+
+.checkbox-block .item-bcg {
+  background-color: #f9fafa !important;
+  border-color: #eeeeee !important;
+  transition: all 0s ease-out; }
+
+.checkbox-block h2.item-title {
+  color: #757575;
+  font-size: 14px;
+  padding-right: 45px;
+  padding-top: 10px; }
+
+.checkbox-block input[type="checkbox"].filled-in:checked + label:after {
+  border: 2px solid #4ec2f6;
+  background-color: #4ec2f6; }
+
+.checkbox-block input[type="checkbox"].filled-in:not(:checked) + label:after {
+  border: 2px solid #4ec2f6 !important; }
+
+.checkbox-block input[type="checkbox"].filled-in:checked + label:before {
+  border-right: 2px solid #029ae4;
+  border-bottom: 2px solid #029ae4; }
+
+.checkbox-block input[type="checkbox"] + label {
+  margin: 10px 0 0;
+  position: absolute;
+  right: 0;
+  top: 15px; }

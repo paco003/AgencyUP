@@ -1,0 +1,46 @@
+/* # Theme Simple
+===========================================*/
+.search-bar-bcg {
+  background-color: #853a96;
+  height: auto;
+  background-size: 100% 0;
+  padding: 0; }
+  .search-bar-bcg input {
+    font-size: 14px;
+    color: white;
+    border-bottom: 1px solid white !important;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    height: 25px; }
+    .search-bar-bcg input::-webkit-input-placeholder {
+      font-size: 14px;
+      color: white; }
+    .search-bar-bcg input:focus:not([readonly]) {
+      color: white;
+      font-size: 14px;
+      box-shadow: none; }
+  .search-bar-bcg .item-input .icon-small {
+    color: #692c90 !important;
+    font-size: 18px !important;
+    min-width: 40px;
+    text-align: center; }
+
+.list-content .list {
+  margin-top: 20px; }
+
+.list-content .item-bcg {
+  background-color: #fefefe !important;
+  border-color: #f4f5f5 !important;
+  transition: all 0 ease-out; }
+
+.list-content .icon-small {
+  color: #692c90 !important;
+  font-size: 18px !important; }
+
+.list-content h2.item-title {
+  color: #9d9d9d;
+  font-size: 14px; }
+
+.list-content h3.item-subtitle {
+  color: rgba(157, 157, 157, 0.6);
+  font-size: 14px; }

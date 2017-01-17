@@ -1,0 +1,73 @@
+/*  #Left menu full width
+===========================================*/
+.hero {
+  background-color: white;
+  background-blend-mode: luminosity;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+  .hero::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+    background: #00bea4;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #00bea4 0%, #81c784 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #00bea4 0%, #81c784 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #00bea4 0%, #81c784 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bea4', endColorstr='#81c784',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
+  .hero .icon-large {
+    color: #00bea4 !important;
+    font-size: 60px !important;
+    margin-top: 40px;
+    display: block;
+    z-index: 9;
+    position: relative; }
+  .hero h1.header-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    z-index: 9;
+    position: relative; }
+
+/*  # Menu List
+===========================================*/
+.menu-list {
+  margin-top: 198px; }
+  .menu-list .item-bcg {
+    background-color: rgba(244, 245, 245, 0.8) !important;
+    border-width: 0;
+    margin: 0;
+    transition: all 0s ease-out;
+    margin: 0; }
+  .menu-list h2.item-title {
+    color: #7fcac3;
+    font-size: 14px;
+    padding-left: 30px; }
+  .menu-list .icon-small {
+    color: #00bea4 !important;
+    font-size: 20px !important;
+    margin-left: 25px; }
+
+.menu-left {
+  width: 90% !important; }
+
+.menu-open .menu-content {
+  transform: translate3d(90%, 0px, 0px) !important;
+  -ms-transform: translate3d(90%, 0px, 0px) !important;
+  -webkit-transform: translate3d(90%, 0px, 0px) !important; }

@@ -1,0 +1,73 @@
+/*  # Theme Full width image
+================================================*/
+.list {
+  padding-top: 0; }
+  .list h2.item-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0; }
+  .list h3.item-subtitle {
+    color: #bdbcbc;
+    font-size: 14px;
+    margin: 0; }
+
+.slider {
+  height: 150px;
+  text-align: center; }
+  .slider .item-images {
+    background-color: white;
+    background-blend-mode: luminosity;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: table;
+    width: 100%;
+    height: 150px; }
+    .slider .item-images::before {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      pointer-events: none;
+      mix-blend-mode: multiply;
+      opacity: 0.5;
+      background: #00bea4;
+      /* Old browsers */
+      background: -moz-linear-gradient(45deg, #00bea4 0%, #81c784 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(45deg, #00bea4 0%, #81c784 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(45deg, #00bea4 0%, #81c784 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bea4', endColorstr='#81c784',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */ }
+    .slider .item-images .item-text-wrap {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      z-index: 9;
+      position: relative; }
+
+.swiped-item-bcg {
+  background-color: #f4f5f5 !important;
+  display: table;
+  height: 150px; }
+  .swiped-item-bcg i.icon {
+    font-size: 24px !important;
+    color: #00bea4; }
+  .swiped-item-bcg .swiped-item-title {
+    color: #7fcac3;
+    font-size: 14px !important; }
+  .swiped-item-bcg a {
+    display: table-cell;
+    vertical-align: bottom;
+    color: #7fcac3;
+    width: 90px;
+    padding: 15px; }
+  .swiped-item-bcg .swiped-item-title {
+    display: table-cell;
+    vertical-align: middle; }
