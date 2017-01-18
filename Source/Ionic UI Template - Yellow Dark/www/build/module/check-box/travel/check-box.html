@@ -1,7 +1,0 @@
-<!--Themes Travel Checkbox -->
-<ion-list *ngIf="data.length" class="checkbox-block">
-  <ion-item *ngFor="let item of data; let i = index" class="waves-effect waves-block waves-light">
-     <input type="checkbox" class="filled-in" id="filled-in-box-{{i}}" (click)="onClick('onChange', item)" checked="checked" />
-     <label class="right" attr.for="filled-in-box-{{i}}">{{item.title}}</label>
-  </ion-item>
-</ion-list>
