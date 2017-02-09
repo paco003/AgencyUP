@@ -50,28 +50,33 @@
 
   </head>
   <body ng-app="starter">
-   <ion-nav-view>
+      
+      <ion-pane>
+
+      <ion-header-bar class="bar bar-positive">
+        
+           <a class="button icon-right ion-chevron-right button-clear button-dark pull-right" onClick="window.location='empresa.html'">Empresas</a>
+
+          <h3>Formulario de Consulta</h3> 
+
+      </ion-header-bar>
 
      <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
-    <div class="tabs">
-      <a class="tab-item active" href="#">
-        <i class="icon ion-home"></i>
-        Test
-      </a>
-      <a class="tab-item" href="#">
-        <i class="icon ion-star"></i>
-        Favorites
-      </a>
-      <a class="tab-item" href="#">
-        <i class="icon ion-gear-a"></i>
-        Settings
-      </a>
-    </div>
-  </div>
+        <div class="tabs">
+          <a class="tab-item active" href="#">
+            <i class="ion-android-list"></i>
+            Test
+          </a>
+          <a class="tab-item" href="#">
+            <i class="ion-social-usd-outline"></i>
+            Cotización
+          </a>
+        </div>
+      </div>
       
       <ion-view title="Formulario de Consulta">
 
-              <a class="button icon-right ion-chevron-right button-clear button-dark pull-right" onClick="window.location='empresa.html'">Empresas</a>
+             
       
 
       <ion-content class="padding has-subheader" ng-controller="ExampleController"><center><h3>Formulario de Consulta</h3></center>
@@ -277,7 +282,8 @@
 </ion-view>
 
 
-   </ion-nav-view>
+</ion-pane>
+
 </body>
 
 
