@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Empresas</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    
+
+    <!-- Latest compiled and minified JavaScript -->
+    <link rel="manifest" href="manifest.json">
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-messages.min.js"></script>
+
+
+    <!-- your app's js -->
+    <script src="js/appEmpresas.js"></script>
+
+
+  </head>
+  <body ng-app="starter">
+   <ion-nav-view>
+      
+      <ion-view title="Empresas">
+
+		      	<a class="button icon-left ion-chevron-left button-clear button-dark" onClick="window.location='index.html'">Back</a>
+
+				<a class="button icon-right ion-chevron-right button-clear button-dark pull-right" onClick="window.location='contactos.html'">Contactos</a>
+
+     <ion-content class="padding has-subheader" ng-controller="ExampleController"><center><h3>Registro de Empresas</h3></center>
+
+
+            <form role="form" name="formu" ng-model="formulario">
+
+
+              <!-- _________________________________________________Mensajes __________________________________________-->
+
+                  <!-- Mensaje de nombre de la empresa-->
+                  <div ng-show="formu.Empresa.$dirty">
+
+                    <div ng-show="formu.Empresa.$error.required" class="alert alert-danger" role="alert">
+                      Nombre de la Empresa OBLIGATORIO
+                    </div>
+                    
+                  </div>
+
+                  <!-- Mensaje de Dirección de la empresa-->
+                  <div ng-show="formu.Direccion.$dirty">
+
+                    <div ng-show="formu.Direccion.$error.required" class="alert alert-danger" role="alert">
+                      La dirección es OBLIGATORIA
+                    </div>
+                    
+                  </div>
+
+                 <!-- Mensaje de email-->
+                  <div ng-show="formu.Email.$dirty">
+
+                    <div ng-show="formu.Email.$error.required" class="alert alert-danger" role="alert">
+                      Email OBLIGATORIO
+                    </div>
+                   
+                    <div ng-show="formu.Email.$error.email" class="alert alert-danger" role="alert">
+                      Email INVÁLIDO
+                    </div>
+                  </div>
+
+                   <!-- Mensaje de teléfono-->
+                  <div ng-show="formu.Telefono.$dirty">
+
+                    <div ng-show="formu.Telefono.$error.required" class="alert alert-danger" role="alert">
+                      Teléfono OBLIGATORIO
+                    </div>
+                    
+                  </div>
+
+              <!-- _______________________________________Fin de Mensajes____________________________________________ -->
+
+              <!-- ___________________________________________Campos_________________________________________________ -->
+
+                <!-- Campo de nombre de la empresa -->
+                        <div class="list">
+                            <label  class="item item-input item-floating-label" for="Empresa" ng-class="{ 'has-error': formu.Empresa.$invalid, 'has-success': formu.Empresa.$valid }">
+                              <span class="input-label">Empresa</span>
+
+                              <span ng-if="formu.Empresa.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                              
+                                <input type="text" class="form-control" 
+                                    name="Empresa" 
+                                    id="Empresa" 
+                                    placeholder="Nombre de la Empresa" 
+                                    ng-model="Empresa" 
+                                     required>
+
+                            </label>
+                          </div>
+
+                 <!-- Campo de dirección -->
+                        <div class="list">
+                           <label for="Direccion" class="item item-input item-floating-label" ng-class="{ 'has-error': formu.Direccion.$invalid, 'has-success': formu.Direccion.$valid }">
+                            <span class="input-label">Dirección</span>
+
+                            <span ng-if="formu.Direccion.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+
+                              <input type="text" class="form-control" 
+                                  name="Direccion" 
+                                  id="Direccion" 
+                                  placeholder="Dirección" 
+                                  ng-model="direccion"
+                                  autofocus required>
+                          </label>
+                          
+                        </div>
+
+
+                <!-- Campo de Email -->
+                        <div class="list">
+                          <label for="Email" class="item item-input item-floating-label" ng-class="{ 'has-error': formu.Email.$invalid, 'has-success': formu.Email.$valid }">
+                            <span class="input-label">Email</span>
+
+                            <span ng-if="formu.Email.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+
+                              <input type="email" class="form-control"
+                              name="Email" 
+                              id="Email" 
+                              placeholder="Email" 
+                              ng-model="mail" 
+                              autofocus required>
+                          </label>
+                        </div>
+
+
+                        <!-- Campo de teléfono -->
+                        <div class="list">
+                          <label for="Telefono" class="item item-input item-floating-label" ng-class="{ 'has-error': formu.Telefono.$invalid, 'has-success': formu.Telefono.$valid }">
+                            <span class="input-label">Teléfono</span>
+
+                            <span ng-if="formu.Telefono.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+
+                              <input type="number" class="form-control"
+                              name="Telefono" 
+                              id="Telefono" 
+                              placeholder="Teléfono" 
+                              ng-model="telefono" 
+                              autofocus required>
+                          </label>
+                        </div>
+
+                      
+                
+              <!-- _______________________________________________Fin de los Campos_______________________________________ -->
+              
+              <!-- Hasta que sea valido el formulario se habilita el botón -->
+                <center>  
+                <button ng-disabled="formu.$invalid" id="btnSend" class="button button-outline button-positive">Generar Consulta</button>
+
+                </center>
+
+      </form>
+
+
+  
+            
+            <div class="table-responsive">
+              <table id="Table"  class="table"> 
+                      <thead>
+                        <tr>
+                          <th>
+                            Empresa
+                          </th>
+                          <th>
+                            Dirección
+                          </th>
+                          <th>
+                          Email
+                          </th>
+                          <th>
+                            Teléfono
+                          </th>
+                          <th colspan="2">
+                            Acciones
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      </tbody>
+                    </table>
+                  </div>
+              
+
+        </ion-content>
+
+</ion-view>
+
+
+   </ion-nav-view>
+</body>
+
+
+
+</html>
