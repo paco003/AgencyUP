@@ -1,0 +1,48 @@
+/*  # Theme Simple
+===========================================*/
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-blend-mode: luminosity;
+  height: 200px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+  .hero::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    background-color: rgba(38, 50, 56, 0.5); }
+  .hero h2.header-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    position: absolute;
+    bottom: 5px; }
+
+/*  # Meni List
+===========================================*/
+.menu-list {
+  top: 200px;
+  color: #616262;
+  line-height: normal;
+  font-size: 16px !important; }
+  .menu-list .item-bcg {
+    background-color: rgba(55, 71, 79, 0.6) !important;
+    border-color: rgba(55, 71, 79, 0);
+    margin-bottom: 2px;
+    transition: all 0s ease-out;
+    margin-bottom: 2px; }
+  .menu-list h2.item-title {
+    color: white;
+    font-size: 20px;
+    line-height: normal; }
+  .menu-list .icon-small {
+    color: #ef4437 !important;
+    font-size: 20px !important; }
