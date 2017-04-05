@@ -1,0 +1,46 @@
+/*  # Theme Account header
+===========================================*/
+.hero {
+  padding: 25px 0;
+  height: 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: #8686F8;
+  background: -moz-linear-gradient(left, #8686F8 0%, #2C6BF3 50%, #241FB8 100%);
+  background: -webkit-linear-gradient(left, #8686F8 0%, #2C6BF3 50%, #241FB8 100%);
+  background: linear-gradient(left, #8686F8 0%, #2C6BF3 50%, #241FB8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#8686F8', endColorstr='#241FB8',GradientType=1 ); }
+  .hero img {
+    height: 104px;
+    width: 104px;
+    border-radius: 50%; }
+  .hero h1.header-title {
+    color: white;
+    font-size: 28px;
+    margin: 5px 0 0; }
+  .hero h2.header-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    margin: 0; }
+
+/*  # Theme Account header Menu list
+===========================================*/
+.has-header-media {
+  margin-top: 200px; }
+  .has-header-media .item-icon-left {
+    padding-left: 70px; }
+  .has-header-media .item-bcg {
+    background-color: rgba(55, 71, 79, 0.6) !important;
+    border-color: rgba(55, 71, 79, 0);
+    margin-bottom: 2px;
+    transition: all 0s ease-out; }
+    .has-header-media .item-bcg h2.item-title {
+      color: white;
+      font-size: 20px;
+      line-height: normal; }
+    .has-header-media .item-bcg.activated {
+      border-color: transparent;
+      border-width: 1px; }
+    .has-header-media .item-bcg .icon-small {
+      color: #FFFFFF !important;
+      font-size: 20px !important;
+      left: 30px; }

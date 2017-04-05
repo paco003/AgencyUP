@@ -1,0 +1,122 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Paco\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] CLI Version:  3.5.0
+[debug] Platform:     win32
+[debug] Node Version: v6.9.5
+[debug] Time:         Mon Apr 03 2017 11:58:04 GMT-0500 (Hora de verano central (México))
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/agencyup-b5fcd  
+ Mon Apr 03 2017 11:58:04 GMT-0500 (Hora de verano central (México))
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/agencyup-b5fcd/tokens  
+ Mon Apr 03 2017 11:58:05 GMT-0500 (Hora de verano central (México))
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'agencyup-b5fcd'...
+[info] 
+[info] i  deploying database, functions, hosting
+[info] +  database: rules ready to deploy.
+[debug] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "dependencies": {
+    "firebase-admin": "^4.1.2",
+    "firebase-functions": "^0.5"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[info] i  runtimeconfig: ensuring necessary APIs are enabled...
+[debug] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/agencyup-b5fcd?view=CONSUMER_VIEW  
+ Mon Apr 03 2017 11:58:07 GMT-0500 (Hora de verano central (México))
+[debug] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/agencyup-b5fcd?view=CONSUMER_VIEW  
+ Mon Apr 03 2017 11:58:07 GMT-0500 (Hora de verano central (México))
+[debug] <<< HTTP RESPONSE 200
+[info] +  runtimeconfig: all necessary APIs are enabled
+[debug] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/agencyup-b5fcd  
+ Mon Apr 03 2017 11:58:07 GMT-0500 (Hora de verano central (México))
+[debug] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/agencyup-b5fcd/apiKeys  
+ Mon Apr 03 2017 11:58:07 GMT-0500 (Hora de verano central (México))
+[debug] <<< HTTP RESPONSE 200
+[debug] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/agencyup-b5fcd/configs  
+ Mon Apr 03 2017 11:58:19 GMT-0500 (Hora de verano central (México))
+[debug] <<< HTTP RESPONSE 200
+[debug] > [functions] runtime config materialized as: {
+  "firebase": {
+    "databaseURL": "https://agencyup-b5fcd.firebaseio.com",
+    "storageBucket": "agencyup-b5fcd.appspot.com",
+    "apiKey": "AIzaSyAK4zWODaS--PkzBV5yqOml9ft52D5sGvQ",
+    "authDomain": "agencyup-b5fcd.firebaseapp.com"
+  }
+}
+[debug] > [functions] parsed triggers: []
+[info] i  hosting: preparing public directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/agencyup-b5fcd/uploads/-Kgok4JIv7Kj_6OlJ3Sn?fileCount=27187&message=  
+ Mon Apr 03 2017 12:01:33 GMT-0500 (Hora de verano central (México))
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Paco\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] CLI Version:  3.5.0
+[debug] Platform:     win32
+[debug] Node Version: v6.9.5
+[debug] Time:         Mon Apr 03 2017 12:09:27 GMT-0500 (Hora de verano central (México))
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/agencyup-b5fcd  
+ Mon Apr 03 2017 12:09:28 GMT-0500 (Hora de verano central (México))
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/agencyup-b5fcd/tokens  
+ Mon Apr 03 2017 12:09:29 GMT-0500 (Hora de verano central (México))
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'agencyup-b5fcd'...
+[info] 
+[info] i  deploying database, functions, hosting
+[info] +  database: rules ready to deploy.
+[debug] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "dependencies": {
+    "firebase-admin": "^4.1.2",
+    "firebase-functions": "^0.5"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[info] i  runtimeconfig: ensuring necessary APIs are enabled...
+[debug] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/agencyup-b5fcd?view=CONSUMER_VIEW  
+ Mon Apr 03 2017 12:09:30 GMT-0500 (Hora de verano central (México))
+[debug] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/agencyup-b5fcd?view=CONSUMER_VIEW  
+ Mon Apr 03 2017 12:09:30 GMT-0500 (Hora de verano central (México))
+[debug] <<< HTTP RESPONSE 200
+[info] +  runtimeconfig: all necessary APIs are enabled
+[debug] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/agencyup-b5fcd  
+ Mon Apr 03 2017 12:09:31 GMT-0500 (Hora de verano central (México))
+[debug] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/agencyup-b5fcd/apiKeys  
+ Mon Apr 03 2017 12:09:31 GMT-0500 (Hora de verano central (México))
+[debug] <<< HTTP RESPONSE 200
+[debug] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/agencyup-b5fcd/configs  
+ Mon Apr 03 2017 12:09:50 GMT-0500 (Hora de verano central (México))
+[debug] <<< HTTP RESPONSE 200
+[debug] > [functions] runtime config materialized as: {
+  "firebase": {
+    "databaseURL": "https://agencyup-b5fcd.firebaseio.com",
+    "storageBucket": "agencyup-b5fcd.appspot.com",
+    "apiKey": "AIzaSyAK4zWODaS--PkzBV5yqOml9ft52D5sGvQ",
+    "authDomain": "agencyup-b5fcd.firebaseapp.com"
+  }
+}
+[debug] > [functions] parsed triggers: []
+[info] i  hosting: preparing public directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/agencyup-b5fcd/uploads/-KgomgERmio6OhNXjapB?fileCount=27187&message=  
+ Mon Apr 03 2017 12:13:47 GMT-0500 (Hora de verano central (México))

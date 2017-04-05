@@ -1,0 +1,136 @@
+<ion-header-bar class="bar bar-header bar-dark">
+  <h1 class="title">Nueva Cotizaciones</h1>
+  <button class="button button-outline button-assertive" onClick="window.location='/#/leftMenu'">Cancel</button>
+</ion-header-bar>
+<ion-content class="padding" ng-controller="CotizacionCtrl">
+
+  <form role="form" name="formu" ng-model="formulario" ng-submit="agregar2(Cotizacion)">
+
+
+<!-- __________________________________Mensajes ____________________________________-->
+
+<!-- Mensaje de nombre del metodo de envío-->
+  <div ng-show="formu.Envio.$dirty">
+
+    <div ng-show="formu.Envio.$error.required" class="alert alert-danger" role="alert">
+      Método de Envío OBLIGATORIO
+    </div>
+
+  </div>
+
+  <!-- Mensaje de nombre del contacto-->
+  <div ng-show="formu.Empresa.$dirty">
+
+    <div ng-show="formu.Empresa.$error.required" class="alert alert-danger" role="alert">
+      Nombre de la Empresa OBLIGATORIO
+    </div>
+
+  </div>
+
+ <!-- Mensaje de nombre del Necesidad-->
+  <div ng-show="formu.Necesidad.$dirty">
+
+    <div ng-show="formu.Necesidad.$error.required" class="alert alert-danger" role="alert">
+      Necesidad OBLIGATORIA
+    </div>
+
+  </div>
+
+<!-- Fin de Mensajes -->
+
+<!-- Campos -->
+
+<!-- Seleccionar la forma de envío -->
+      <div class="list">
+      <label for="FormaContacto" class="item item-input item-select">
+        <div class="input-label">
+          Forma de Emvío
+        </div>
+      <select class="form-control" ng-model="Cotizacion.FormaEnvio" >
+
+        <option>Facebook</option>
+        <option>Whatsapp</option>
+        <option>Email</option>
+      </select>
+      </label>
+
+      </div>
+
+
+<!-- Campo de nombre de la empresa -->
+        <div class="list" ng-controller="ConsultaCtrl">
+            <label  class="item item-input item-floating-label" for="Empresa" ng-class="{ 'has-error': formu.Empresa.$invalid, 'has-success': formu.Empresa.$valid }">
+              <span class="input-label">Empresa</span>
+
+              <span ng-if="formu.Empresa.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+
+                <input type="text" class="form-control"
+                    name="Empresa"
+                    id="Empresa"
+                    placeholder="Nombre de la Empresa"
+                    ng-model="Cotizacion.Empresa"
+                     required>
+
+            </label>
+
+            <ion-item ng-repeat="consul in consulta | filter: Cotizacion.Empresa">
+            <center>
+              <h2>Nombre: {{consul.Empresa}}</h2>
+            </center>
+            </ion-item>
+          </div>
+
+
+ <!-- Campo de nombre del contacto -->
+        <div class="list" ng-controller="ConsultaCtrl">
+           <label for="Necesidad" class="item item-input item-floating-label" ng-class="{ 'has-error': formu.Necesidad.$invalid, 'has-success': formu.Necesidad.$valid }">
+            <span class="input-label">Necesidad</span>
+
+            <span ng-if="formu.Necesidad.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+
+              <input type="text" class="form-control"
+                  name="Necesidad"
+                  id="Necesidad"
+                  placeholder="Nombre del Necesidad"
+                  ng-model="Cotizacion.Necesidad"
+                  autofocus required>
+          </label>
+
+          <ion-item ng-repeat="consul in consulta | filter: Cotizacion.Necesidad">
+          <center>
+            <h2>Necesidad: {{consul.Necesidad}}</h2>
+          </center>
+          </ion-item>
+
+        </div>
+
+
+
+<!-- Seleccionar el Status de la consulta -->
+      <div class="list">
+      <label for="Status" class="item item-input item-select">
+        <div class="input-label">
+          Status
+        </div>
+      <select class="form-control" ng-model="Cotizacion.Status">
+
+        <option>Enviado</option>
+        <option>Seguimiento</option>
+        <option>Aceptado</option>
+      </select>
+      </label>
+    </div>
+
+
+
+<!-- Fin de los Campos -->
+
+<!-- Hasta que sea valido el formulario se habilita el botón -->
+<center>
+<button ng-disabled="formu.$invalid" id="btnSend" class="button button-outline button-positive" onClick="window.location='/#/leftMenu'">
+  Guardar</button>
+
+</center>
+
+</form>
+</ion-content>

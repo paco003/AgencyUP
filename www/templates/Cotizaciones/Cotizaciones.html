@@ -1,0 +1,41 @@
+<ion-view title="Cotizaciones"  ng-controller="CotizacionCtrl">
+      <ion-content class="padding has-subheader">
+        <div class="bar bar-header">
+          <h1 class="title">Cotizaciones</h1>
+              <button class="button button-icon ion-plus-round" onClick="window.location='/#/Cotizaciones/NuevaCotizacion'">
+              </button>
+        </div>
+
+        <div class="bar bar-subheader">
+          <label class="item-input-wrapper">
+            <i class="icon ion-ios-search placeholder-icon"></i>
+              <input type="search" ng-model="busqueda" placeholder="Search">
+          </label>
+
+        </div>
+
+            <br><br><br><br><br><br>
+
+
+    <ion-list>
+      <ion-item ng-repeat="coti in cotizacion | filter: busqueda" ng-href="#/Cotizaciones/EditarCotizacion/{{coti.$id}}" >
+      <center>
+
+        <h2>Metodo Envío: {{coti.FormaEnvio}}</h2>
+        <h3>Empresa: {{coti.Empresa}}</h3>
+        <h3>Necesidad: {{coti.Necesidad}}</h3>
+        <h3>Status: {{coti.Status}}</h3>
+
+      </center>
+            <ion-option-button class="button-assertive"
+                     ng-click="eliminar(coti)">
+              Eliminar
+            </ion-option-button>
+      </ion-item>
+    </ion-list>
+
+
+    </ion-content>
+
+
+</ion-view>

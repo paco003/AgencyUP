@@ -1,0 +1,139 @@
+
+                <ion-header-bar class="bar bar-header bar-dark">
+                  <h1 class="title">Nueva Empresa</h1>
+                  <button class="button button-outline button-assertive" onClick="window.location='/#/leftMenu'">Cancel</button>
+                </ion-header-bar>
+                <ion-content class="padding" ng-controller="EmpresaCtrl">
+
+                  <form role="form" name="formu" ng-model="formulario" ng-submit="agregar2(Empresa)">
+
+
+            <!-- __________________________________Mensajes ____________________________________-->
+
+                <!-- Mensaje de nombre de la empresa-->
+                <div ng-show="formu.Empresa.$dirty">
+
+                  <div ng-show="formu.Empresa.$error.required" class="alert alert-danger" role="alert">
+                    Nombre de la Empresa OBLIGATORIO
+                  </div>
+
+                </div>
+
+                <!-- Mensaje de Dirección de la empresa-->
+                <div ng-show="formu.Direccion.$dirty">
+
+                  <div ng-show="formu.Direccion.$error.required" class="alert alert-danger" role="alert">
+                    La dirección es OBLIGATORIA
+                  </div>
+
+                </div>
+
+               <!-- Mensaje de email-->
+                <div ng-show="formu.Email.$dirty">
+
+                  <div ng-show="formu.Email.$error.required" class="alert alert-danger" role="alert">
+                    Email OBLIGATORIO
+                  </div>
+
+                  <div ng-show="formu.Email.$error.email" class="alert alert-danger" role="alert">
+                    Email INVÁLIDO
+                  </div>
+                </div>
+
+                 <!-- Mensaje de teléfono-->
+                <div ng-show="formu.Telefono.$dirty">
+
+                  <div ng-show="formu.Telefono.$error.required" class="alert alert-danger" role="alert">
+                    Teléfono OBLIGATORIO
+                  </div>
+
+                </div>
+
+ <!-- _______________________________________Fin de Mensajes____________________________________________ -->
+
+
+  <!-- ___________________________________________Campos_________________________________________________ -->
+
+              <!-- Campo de nombre de la empresa -->
+                      <div class="list" >
+                        <label  class="item item-input item-floating-label" for="Empresa" ng-class="{ 'has-error': formu.Empresa.$invalid, 'has-success': formu.Empresa.$valid }">
+                          <span class="input-label">Empresa</span>
+
+                          <span ng-if="formu.Empresa.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                          <input type="text" name="Empresa" id="Empresa" ng-model="Empresa.Empresa" placeholder="Empresa" required>
+                          </label>
+                          <ion-item ng-repeat="emp in empresa | filter: Empresa.Nombre">
+                          <center>
+                            <h2>Nombre: {{emp.Empresa}}</h2>
+                          </center>
+                          </ion-item>
+                        </div>
+
+
+               <!-- Campo de dirección -->
+                      <div class="list">
+                         <label for="Direccion" class="item item-input item-floating-label" ng-class="{ 'has-error': formu.Direccion.$invalid, 'has-success': formu.Direccion.$valid }">
+                          <span class="input-label">Dirección</span>
+
+                          <span ng-if="formu.Direccion.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+
+                            <input type="text" class="form-control"
+                                name="Direccion"
+                                id="Direccion"
+                                placeholder="Dirección"
+                                ng-model="Empresa.Direccion"
+                                autofocus required>
+                        </label>
+                      </div>
+
+
+              <!-- Campo de Email -->
+                      <div class="list">
+                        <label for="Email" class="item item-input item-floating-label" ng-class="{ 'has-error': formu.Email.$invalid, 'has-success': formu.Email.$valid }">
+                          <span class="input-label">Email</span>
+
+                          <span ng-if="formu.Email.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+
+                            <input type="text" class="form-control"
+                            name="Email"
+                            id="Email"
+                            placeholder="Email"
+                            ng-model="Empresa.Email"
+                            autofocus required>
+                        </label>
+                      </div>
+
+
+                      <!-- Campo de teléfono -->
+                      <div class="list">
+                        <label for="Telefono" class="item item-input item-floating-label" ng-class="{ 'has-error': formu.Telefono.$invalid, 'has-success': formu.Telefono.$valid }">
+                          <span class="input-label">Teléfono</span>
+
+                          <span ng-if="formu.Telefono.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+
+                            <input type="number" class="form-control"
+                            name="Telefono"
+                            id="Telefono"
+                            placeholder="Teléfono"
+                            ng-model="Empresa.Telefono"
+                            autofocus required>
+                        </label>
+                      </div>
+
+
+
+        <!-- ____________________________________Fin de los Campos_________________________________ -->
+
+                <!-- Hasta que sea valido el formulario se habilita el botón -->
+               <center>
+          <button ng-disabled="formu.$invalid" type="submit" class="button button-outline button-positive"
+          onClick="window.location='/#/leftMenu'">
+          Guardar</button>
+
+                  </center>
+
+                </form>
+                </ion-content>
+
+
+    <!-- ____________________Fin del Formulario de registro_______________________________________-->

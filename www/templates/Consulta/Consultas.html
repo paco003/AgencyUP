@@ -1,0 +1,50 @@
+<ion-view title="Consultas"  ng-controller="ConsultaCtrl">
+      <ion-content class="padding has-subheader">
+        <div class="bar bar-header">
+          <h1 class="title">Consultas</h1>
+              <button class="button button-icon ion-plus-round" onClick="window.location='/#/Consulta/NuevaConsulta'">
+              </button>
+        </div>
+
+        <div class="bar bar-subheader">
+          <label class="item-input-wrapper">
+            <i class="icon ion-ios-search placeholder-icon"></i>
+              <input type="search" ng-model="busqueda" placeholder="Search">
+          </label>
+
+        </div>
+
+            <br><br><br><br><br><br>
+
+
+    <ion-list>
+      <ion-item ng-repeat="consul in consulta | filter: busqueda" ng-href="#/Consulta/EditarConsulta/{{consul.$id}}" >
+      <center>
+
+        <h2>Empresa: {{consul.Empresa}}</h2>
+        <h3>Contacto: {{consul.Contacto}}</h3>
+        <h3>Trabajador: {{consul.Trabajador}}</h3>
+        <h3>Forma   Contacto: {{consul.FormaContacto}}</h3>
+        <h3>Necesidad: {{consul.Necesidad}}</h3>
+        <h3>Status: {{consul.Status}}</h3>
+        <h3>Fecha: {{consul.Fecha}}</h3>
+
+
+
+      </center>
+            <ion-option-button class="button-assertive"
+                     ng-click="eliminar(consul)">
+              Eliminar
+            </ion-option-button>
+
+
+
+
+      </ion-item>
+    </ion-list>
+
+
+    </ion-content>
+
+
+</ion-view>

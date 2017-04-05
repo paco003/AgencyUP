@@ -1,0 +1,40 @@
+<ion-view title="Empresas">
+      <ion-content class="padding has-subheader">
+        <div class="bar bar-header" ng-controller="ContactoCtrl" >
+          <h1 class="title">Contactos</h1>
+           <!-- ____________________Activa la ventana modal al dar clic en el icono de "+" _____________________________-->
+              <button class="button button-icon ion-plus-round" onClick="window.location='/#/Contacto/NuevoContacto'">
+              </button>
+        </div>
+
+        <div class="bar bar-subheader">
+          <label class="item-input-wrapper">
+            <i class="icon ion-ios-search placeholder-icon"></i>
+            <input type="search" ng-model="busqueda" placeholder="Search">
+          </label>
+
+        </div>
+            <br><br><br><br><br><br>
+    <ion-list ng-controller="ContactoCtrl" >
+     <!-- ____________________Se inicializa la lista________________________-->
+      <ion-item ng-repeat="cont in contacto | filter: busqueda" ng-href="#/Contacto/EditarContacto/{{cont.$id}}" >
+      <center>
+
+        <h2>Nombre: {{cont.Nombre}}</h2>
+        <h3>Empresa: {{cont.NombreEmpresa}}</h3>
+        <h3>Mail: {{cont.Email}}</h3>
+        <h3>Teléfono: {{cont.Telefono}}</h3>
+
+      </center>
+
+            <ion-option-button class="button-assertive"
+                     ng-click="eliminar(cont)">
+              Eliminar
+            </ion-option-button>
+      </ion-item>
+    </ion-list>
+
+    </ion-content>
+
+
+</ion-view>

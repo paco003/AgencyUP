@@ -1,0 +1,160 @@
+<ion-view title="Editar Consulta" ng-controller="ConsultaCtrl" >
+          <ion-header-bar class="bar bar-header bar-dark">
+             <h1 class="title">Editar Contacto</h1>
+              <button class="button button-outline button-assertive" onClick="window.location='/#/leftMenu'">Cancel</button>
+          </ion-header-bar>
+
+      <ion-content>
+            <form role="form" name="formu" ng-model="formulario" ng-submit="editarConsulta(consultaElegida)">
+            <!-- ______________________________________Mensajes ____________________________________-->
+
+
+              <!-- Mensajes -->
+
+                  <!-- Mensaje de nombre de la empresa-->
+                  <div ng-show="formu.Empresa.$dirty">
+
+                    <div ng-show="formu.Empresa.$error.required" class="alert alert-danger" role="alert">
+                      Nombre de la Empresa OBLIGATORIO
+                    </div>
+                    
+                  </div>
+
+                  <!-- Mensaje de nombre del contacto-->
+                  <div ng-show="formu.Contacto.$dirty">
+
+                    <div ng-show="formu.Contacto.$error.required" class="alert alert-danger" role="alert">
+                      Nombre del Contacto OBLIGATORIO
+                    </div>
+                    
+                  </div>
+
+                 <!-- Mensaje de nombre del Trabajador-->
+                  <div ng-show="formu.Trabajador.$dirty">
+
+                    <div ng-show="formu.Trabajador.$error.required" class="alert alert-danger" role="alert">
+                      Nombre del Trabajador OBLIGATORIO
+                    </div>
+                    
+                  </div>
+
+              <!-- Fin de Mensajes -->
+
+              <!-- Campos -->
+
+                <!-- Campo de nombre de la empresa -->
+                        <div class="list">
+                            <label  class="item item-input item-floating-label" for="Empresa" ng-class="{ 'has-error': formu.Empresa.$invalid, 'has-success': formu.Empresa.$valid }">
+                              <span class="input-label">Empresa</span>
+
+                              <span ng-if="formu.Empresa.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                              
+                                <input type="text" class="form-control" 
+                                    name="Empresa" 
+                                    id="Empresa" 
+                                    placeholder="Nombre de la Empresa" 
+                                    ng-model="consultaElegida.Empresa" 
+                                     required>
+
+                            </label>
+                          </div>
+
+                 <!-- Campo de nombre del contacto -->
+                        <div class="list">
+                           <label for="Contacto" class="item item-input item-floating-label" ng-class="{ 'has-error': formu.Contacto.$invalid, 'has-success': formu.Contacto.$valid }">
+                            <span class="input-label">Contacto</span>
+
+                            <span ng-if="formu.Contacto.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+
+                              <input type="text" class="form-control" 
+                                  name="Contacto" 
+                                  id="Contacto" 
+                                  placeholder="Nombre del Contacto" 
+                                  ng-model="consultaElegida.Contacto"
+                                  autofocus required>
+                          </label>
+                          
+                        </div>
+
+
+                <!-- Campo de nombre del trabajador -->
+                        <div class="list">
+                          <label for="Trabajador" class="item item-input item-floating-label" ng-class="{ 'has-error': formu.Trabajador.$invalid, 'has-success': formu.Trabajador.$valid }">
+                            <span class="input-label">Trabajador</span>
+
+                            <span ng-if="formu.Trabajador.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+
+                              <input type="text" class="form-control"
+                              name="Trabajador" 
+                              id="Trabajador" 
+                              placeholder="Trabajador" 
+                              ng-model="consultaElegida.Trabajador" 
+                              autofocus required>
+                          </label>
+                        </div>
+
+                      
+                <!-- Seleccionar la forma de contacto -->
+                      <div class="list">
+                      <label for="FormaContacto" class="item item-input item-select">
+                        <div class="input-label">
+                          Forma Contacto
+                        </div>
+                      <select class="form-control" id="FormaContacto" ng-model="consultaElegida.FormaContacto">
+                        
+                        <option>Busqueda en internet(Google)</option>
+                        <option>Recomendación</option>
+                        <option>Facebook</option>
+                        <option>Otro</option>
+                      </select>
+                      </label>
+
+                      </div>
+
+                <!-- Seleccionar la necesidad -->
+                      <div class="list">
+                      <label for="Necesidad" class="item item-input item-select">
+                        <div class="input-label">
+                          Necesidad
+                        </div>
+                      <select class="form-control" id="Necesidad" ng-model="consultaElegida.Necesidad">
+                        
+                        <option>Desarrollo Web</option>
+                        <option>Campañas Digitales</option>
+                        <option>Aplicaciones</option>
+                        <option>Diseño Grafico</option>
+                      </select>
+                      </label>
+
+                      </div>
+
+                <!-- Seleccionar el Status de la consulta -->
+                      <div class="list">
+                      <label for="Status" class="item item-input item-select">
+                        <div class="input-label">
+                          Status
+                        </div>
+                      <select class="form-control" ng-model="consultaElegida.Status">
+                       
+                        <option>Enviado</option>
+                        <option>Seguimiento</option>
+                        <option>Aceptado</option>
+                      </select>
+                      </label>
+                    </div>
+
+                <!-- Seleccionar la fecha de la consulta -->
+                    <label for="Fecha" class="item item-input">
+                      <span  class="input-label">Fecha</span>
+                      <input type="date" id="Fecha" placeholder="Fecha" >
+                    </label>
+
+              <!-- Fin de los Campos -->
+              
+              <!-- Hasta que sea valido el formulario se habilita el botón -->
+                <center>  
+                <button ng-disabled="formu.$invalid" onClick="window.location='/#/leftMenu'" class="button button-outline button-positive"> Guardar</button>
+
+                </center>
+
+      </form>

@@ -1,0 +1,193 @@
+<ion-view title="Empresas">
+      <ion-content class="padding has-subheader">
+        <div class="bar bar-header"  ng-controller="EmpresaCtrl" >
+          <h1 class="title">Empresas</h1>
+           <!-- ____________________Activa la ventana modal al dar clic en el icono de "+" _____________________________-->
+              <button class="button button-icon ion-plus-round" onClick="window.location='/#/Empresa/NuevaEmpresa'">
+              </button>
+        </div>
+
+        <div class="bar bar-subheader" >
+          <label class="item-input-wrapper">
+            <i class="icon ion-ios-search placeholder-icon"></i>
+            <input type="search" ng-model="Empresa.Nombre" placeholder="Search">
+          </label>
+
+        </div>
+            <br><br><br><br><br><br>
+    <ion-list  ng-controller="EmpresaCtrl" delegate-handle="empresa">
+     <!-- ____________________Se inicializa la lista________________________-->
+      <ion-item ng-repeat="emp in empresa | filter: Empresa.Nombre" ng-href="#/Empresa/EditarEmpresa/{{emp.$id}}" >
+      <center>
+
+        <h2>Nombre: {{emp.Empresa}}</h2>
+        <h3>Dirección {{emp.Direccion}}</h3>
+        <h3>Mail: {{emp.Email}}</h3>
+        <h3>Teléfono: {{emp.Telefono}}</h3>
+
+      </center>
+
+            <ion-option-button class="button-assertive"
+                     ng-click="eliminar(emp)">
+              Eliminar
+            </ion-option-button>
+      </ion-item>
+    </ion-list>
+
+
+
+
+     <!-- ____________________Inicio del Formulario de registro_______________________________________-->
+
+
+         <script id="home.html" type="text/ng-template">
+              <ion-modal-view>
+                <ion-header-bar class="bar bar-header bar-dark">
+                  <h1 class="title">Nueva Empresa</h1>
+                  <button class="button button-outline button-assertive" ng-click="modal.hide()">Cancel</button>
+                </ion-header-bar>
+                <ion-content class="padding">
+
+                  <form role="form" name="formu" ng-model="formulario" ng-submit="agregar2(Empresa)">
+
+
+            <!-- __________________________________Mensajes ____________________________________-->
+
+                <!-- Mensaje de nombre de la empresa-->
+                <div ng-show="formu.Empresa.$dirty">
+
+                  <div ng-show="formu.Empresa.$error.required" class="alert alert-danger" role="alert">
+                    Nombre de la Empresa OBLIGATORIO
+                  </div>
+
+                </div>
+
+                <!-- Mensaje de Dirección de la empresa-->
+                <div ng-show="formu.Direccion.$dirty">
+
+                  <div ng-show="formu.Direccion.$error.required" class="alert alert-danger" role="alert">
+                    La dirección es OBLIGATORIA
+                  </div>
+
+                </div>
+
+               <!-- Mensaje de email-->
+                <div ng-show="formu.Email.$dirty">
+
+                  <div ng-show="formu.Email.$error.required" class="alert alert-danger" role="alert">
+                    Email OBLIGATORIO
+                  </div>
+
+                  <div ng-show="formu.Email.$error.email" class="alert alert-danger" role="alert">
+                    Email INVÁLIDO
+                  </div>
+                </div>
+
+                 <!-- Mensaje de teléfono-->
+                <div ng-show="formu.Telefono.$dirty">
+
+                  <div ng-show="formu.Telefono.$error.required" class="alert alert-danger" role="alert">
+                    Teléfono OBLIGATORIO
+                  </div>
+
+                </div>
+
+ <!-- _______________________________________Fin de Mensajes____________________________________________ -->
+
+
+  <!-- ___________________________________________Campos_________________________________________________ -->
+
+              <!-- Campo de nombre de la empresa -->
+                      <div class="list">
+                        <label  class="item item-input item-floating-label" for="Empresa" ng-class="{ 'has-error': formu.Empresa.$invalid, 'has-success': formu.Empresa.$valid }">
+                          <span class="input-label">Empresa</span>
+
+                          <span ng-if="formu.Empresa.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                          <input type="text" name="Empresa" id="Empresa" ng-model="Empresa" placeholder="Empresa" required>
+                          </label>
+                          <ion-item ng-repeat="emp in empresa | filter: Empresa">
+                          <center>
+                            <h2>Nombre: {{emp.Empresa}}</h2>
+                          </center>
+                          </ion-item>
+                        </div>
+
+
+               <!-- Campo de dirección -->
+                      <div class="list">
+                         <label for="Direccion" class="item item-input item-floating-label" ng-class="{ 'has-error': formu.Direccion.$invalid, 'has-success': formu.Direccion.$valid }">
+                          <span class="input-label">Dirección</span>
+
+                          <span ng-if="formu.Direccion.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+
+                            <input type="text" class="form-control"
+                                name="Direccion"
+                                id="Direccion"
+                                placeholder="Dirección"
+                                ng-model="Direccion"
+                                autofocus required>
+                        </label>
+
+                      </div>
+
+
+              <!-- Campo de Email -->
+                      <div class="list">
+                        <label for="Email" class="item item-input item-floating-label" ng-class="{ 'has-error': formu.Email.$invalid, 'has-success': formu.Email.$valid }">
+                          <span class="input-label">Email</span>
+
+                          <span ng-if="formu.Email.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+
+                            <input type="text" class="form-control"
+                            name="Email"
+                            id="Email"
+                            placeholder="Email"
+                            ng-model="Email"
+                            autofocus required>
+                        </label>
+                      </div>
+
+
+                      <!-- Campo de teléfono -->
+                      <div class="list">
+                        <label for="Telefono" class="item item-input item-floating-label" ng-class="{ 'has-error': formu.Telefono.$invalid, 'has-success': formu.Telefono.$valid }">
+                          <span class="input-label">Teléfono</span>
+
+                          <span ng-if="formu.Telefono.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+
+                            <input type="number" class="form-control"
+                            name="Telefono"
+                            id="Telefono"
+                            placeholder="Teléfono"
+                            ng-model="Telefono"
+                            autofocus required>
+                        </label>
+                      </div>
+
+
+
+        <!-- ____________________________________Fin de los Campos_________________________________ -->
+
+                <!-- Hasta que sea valido el formulario se habilita el botón -->
+               <center>
+          <button ng-disabled="formu.$invalid" type="submit" class="button button-outline button-positive"
+          ng-click="agregar2(Empresa,Direccion,Email,Telefono)">
+          Guardar</button>
+
+                  </center>
+
+                </form>
+                </ion-content>
+              </ion-modal-view>
+    </script>
+
+
+    <!-- ____________________Fin del Formulario de registro_______________________________________-->
+
+
+
+
+    </ion-content>
+
+
+</ion-view>
